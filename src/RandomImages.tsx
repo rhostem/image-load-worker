@@ -19,17 +19,18 @@ export const ImageContainer = styled.div`
   margin-right: auto;
 `;
 
-export const Image = styled.div`
-  position: relative;
-  width: 90px;
-  height: 160px;
+const BlobImageWrap = styled.div`
+  width: 45px;
+  height: 80px;
   background-size: cover;
   outline: 1px solid #00d694;
   background-color: #eee;
 `;
 
 export default function RandomImages(): JSX.Element {
-  const [imageTotalCount, setImageTotalCount] = useState(20);
+  const [imageTotalCount, setImageTotalCount] = useState(80);
+
+  const [imageBlobs, setImageBlobs] = useState([]);
 
   const images = useMemo(
     () =>
@@ -63,13 +64,15 @@ export default function RandomImages(): JSX.Element {
       worker.current.postMessage(images);
 
       worker.current.onmessage = (e): void => {
-        console.log(`from worker`, e.data);
+        console.log(`from worker`, e.data.length);
+        setImageBlobs(e.data);
       };
     }
   }, [images]);
 
   return (
     <Wrap>
+      <h1>Test web worker for image loading </h1>
       <div>
         <label htmlFor="">Image total count: {imageTotalCount}</label>
         <input
@@ -85,15 +88,32 @@ export default function RandomImages(): JSX.Element {
         <button onClick={handleClickReloadImages}>Reload Images</button>
       </div>
 
+      <h2>Direct loading</h2>
       <ImageContainer>
-        {images.map((url, index) => (
-          <Image
-            key={index}
-            style={{
-              backgroundImage: `url(${url})`,
-            }}
-          ></Image>
-        ))}
+        {images.map((imageUrl, index) => {
+          return (
+            <BlobImageWrap
+              key={index}
+              style={{
+                backgroundImage: `url(${imageUrl})`,
+              }}
+            />
+          );
+        })}
+      </ImageContainer>
+
+      <h2>Loading by web worker</h2>
+      <ImageContainer>
+        {imageBlobs.map((imageBlob, index) => {
+          return (
+            <BlobImageWrap
+              key={index}
+              style={{
+                backgroundImage: `url(${imageBlob})`,
+              }}
+            />
+          );
+        })}
       </ImageContainer>
     </Wrap>
   );
