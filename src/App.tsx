@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import RandomImages from './RandomImages';
 
-interface Props {}
-
-function App({}: Props) {
+function App() {
   return (
     <div className="App">
       <RandomImages></RandomImages>

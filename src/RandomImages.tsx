@@ -56,11 +56,13 @@ export default function RandomImages(): JSX.Element {
 
   useEffect(() => {
     if (!worker.current) {
-      worker.current = new Worker('/js/ImageLoadWorker.js');
+      worker.current = new Worker(
+        new URL('./ImageLoadWorker.js', import.meta.url),
+      );
 
       worker.current.postMessage(images);
 
-      worker.current.onmessage = function (e) {
+      worker.current.onmessage = (e): void => {
         console.log(`from worker`, e.data);
       };
     }
