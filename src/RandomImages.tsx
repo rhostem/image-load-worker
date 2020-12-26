@@ -22,15 +22,23 @@ export const ImageContainer = styled.div`
 const BlobImageWrap = styled.div`
   width: 45px;
   height: 80px;
-  background-size: cover;
   outline: 1px solid #00d694;
+  background-size: cover;
   background-color: #eee;
+
+  &.isLoading {
+    background-color: blue;
+  }
+
+  &.isError {
+    background-color: red;
+  }
 `;
 
 export default function RandomImages(): JSX.Element {
   const [imageTotalCount, setImageTotalCount] = useState(80);
 
-  const [imageBlobs, setImageBlobs] = useState([]);
+  const [imageBlobs, setImageBlobs] = useState<string[]>([]);
 
   const images = useMemo(
     () =>
@@ -55,24 +63,58 @@ export default function RandomImages(): JSX.Element {
 
   const worker = useRef<Worker>();
 
-  useEffect(() => {
+  const loadImagesByWorker = useCallback(async (imageUrls) => {
     if (!worker.current) {
-      worker.current = new Worker(
-        new URL('./ImageLoadWorker.js', import.meta.url),
+      setImageBlobs(new Array(imageUrls.length).fill(undefined));
+
+      const maxWorkers = navigator.hardwareConcurrency || 4;
+      const chunkSizeForWorker = Math.ceil(imageUrls.length / maxWorkers);
+
+      console.log(`chunkSizeForWorker`, chunkSizeForWorker);
+
+      const imageChunks = [];
+
+      for (let i = 0; i < maxWorkers; i++) {
+        const startIndex = i * chunkSizeForWorker;
+        imageChunks.push(
+          imageUrls.slice(startIndex, startIndex + chunkSizeForWorker),
+        );
+      }
+
+      const imagePromises = imageChunks.map(
+        (chunk) =>
+          new Promise<string[]>((resolve) => {
+            const chunkWorker = new Worker(
+              new URL('./ImageLoadWorker.js', import.meta.url),
+            );
+
+            chunkWorker.postMessage(chunk);
+
+            chunkWorker.onmessage = (e) => {
+              resolve(e.data);
+            };
+          }),
       );
 
-      worker.current.postMessage(images);
+      const imageBlobsChunks = await Promise.all(imagePromises);
 
-      worker.current.onmessage = (e): void => {
-        console.log(`from worker`, e.data.length);
-        setImageBlobs(e.data);
-      };
+      const allImageBlobs = imageBlobsChunks.reduce(
+        (result, chunk) => [...result, ...chunk],
+        [],
+      );
+
+      setImageBlobs(allImageBlobs);
     }
-  }, [images]);
+  }, []);
+
+  useEffect(() => {
+    loadImagesByWorker(images);
+  }, [images, loadImagesByWorker]);
 
   return (
     <Wrap>
       <h1>Test web worker for image loading </h1>
+
       <div>
         <label htmlFor="">Image total count: {imageTotalCount}</label>
         <input
@@ -88,20 +130,6 @@ export default function RandomImages(): JSX.Element {
         <button onClick={handleClickReloadImages}>Reload Images</button>
       </div>
 
-      <h2>Direct loading</h2>
-      <ImageContainer>
-        {images.map((imageUrl, index) => {
-          return (
-            <BlobImageWrap
-              key={index}
-              style={{
-                backgroundImage: `url(${imageUrl})`,
-              }}
-            />
-          );
-        })}
-      </ImageContainer>
-
       <h2>Loading by web worker</h2>
       <ImageContainer>
         {imageBlobs.map((imageBlob, index) => {
@@ -110,6 +138,27 @@ export default function RandomImages(): JSX.Element {
               key={index}
               style={{
                 backgroundImage: `url(${imageBlob})`,
+              }}
+              className={
+                imageBlob === undefined
+                  ? 'isLoading'
+                  : imageBlob === null
+                  ? 'isError'
+                  : ''
+              }
+            />
+          );
+        })}
+      </ImageContainer>
+
+      <h2>Direct loading</h2>
+      <ImageContainer>
+        {images.map((imageUrl, index) => {
+          return (
+            <BlobImageWrap
+              key={index}
+              style={{
+                backgroundImage: `url(${imageUrl})`,
               }}
             />
           );
