@@ -12,7 +12,16 @@ const Wrap = styled.div`
   padding: 1rem;
 `;
 
-const LoadingMethodSelector = styled.div``;
+const RadioGroup = styled.div`
+  margin-top: 0.5rem;
+  span.label {
+    margin-right: 0.5rem;
+  }
+
+  label {
+    margin-right: 0.5rem;
+  }
+`;
 
 export const ImageContainer = styled.div`
   display: flex;
@@ -22,7 +31,7 @@ export const ImageContainer = styled.div`
   margin-right: auto;
 `;
 
-const BlobImageWrap = styled.div`
+const RadioWrap = styled.div`
   width: 45px;
   height: 80px;
   outline: 1px solid #00d694;
@@ -44,9 +53,15 @@ enum LoadingMethod {
   DIRECT = 'DIRECT',
 }
 
+enum UpdateStyle {
+  ALL = 'ALL_TOGETHER',
+  INCREMENTALLY = 'INCREMENTALLY',
+}
+
 export default function RandomImages(): JSX.Element {
   const [imageTotalCount, setImageTotalCount] = useState(78);
   const [loadingMethod, setLoadingMethod] = useState(LoadingMethod.WORKER);
+  const [updateStyle, setUpdateStyle] = useState(UpdateStyle.ALL);
 
   const randomImages = useMemo(
     () =>
@@ -71,8 +86,15 @@ export default function RandomImages(): JSX.Element {
 
   const handleChangeLoadingMethod = useCallback(
     (e) => {
-      console.log(e.target.value);
       setLoadingMethod(e.target.value);
+      handleClickReloadImages();
+    },
+    [handleClickReloadImages],
+  );
+
+  const handleChangeUpdateStyle = useCallback(
+    (e) => {
+      setUpdateStyle(e.target.value);
       handleClickReloadImages();
     },
     [handleClickReloadImages],
@@ -87,7 +109,10 @@ export default function RandomImages(): JSX.Element {
       <h1>Test web worker for image loading </h1>
 
       <div>
-        <label htmlFor="">Image total count: {imageTotalCount}</label>
+        <label htmlFor="">
+          <b>Image total count </b>
+          {imageTotalCount}
+        </label>
         <input
           type="range"
           name="range"
@@ -100,7 +125,11 @@ export default function RandomImages(): JSX.Element {
         />
         <button onClick={handleClickReloadImages}>Reload Images</button>
 
-        <LoadingMethodSelector>
+        <RadioGroup>
+          <span className={'label'}>
+            <b>Loading Method</b>
+          </span>
+
           <input
             type="radio"
             name="loadingMethod"
@@ -130,7 +159,32 @@ export default function RandomImages(): JSX.Element {
             onChange={handleChangeLoadingMethod}
           />
           <label htmlFor="loadingMethod_direct">Direct</label>
-        </LoadingMethodSelector>
+        </RadioGroup>
+
+        <RadioGroup>
+          <span className={'label'}>
+            <b>Update Style</b>
+          </span>
+          <input
+            type="radio"
+            name="updateStyle"
+            id="updateStyle_all"
+            value={UpdateStyle.ALL}
+            checked={updateStyle === UpdateStyle.ALL}
+            onChange={handleChangeUpdateStyle}
+          />
+          <label htmlFor="updateStyle_all">Update all together</label>
+
+          <input
+            type="radio"
+            name="updateStyle"
+            id="updateStyle_increment"
+            value={UpdateStyle.INCREMENTALLY}
+            checked={updateStyle === UpdateStyle.INCREMENTALLY}
+            onChange={handleChangeUpdateStyle}
+          />
+          <label htmlFor="updateStyle_increment">Update incrementally</label>
+        </RadioGroup>
       </div>
 
       {(loadingMethod === LoadingMethod.ALL ||
@@ -140,7 +194,7 @@ export default function RandomImages(): JSX.Element {
           <ImageContainer>
             {imageBlobs.map((imageBlob, index) => {
               return (
-                <BlobImageWrap
+                <RadioWrap
                   key={index}
                   style={{
                     backgroundImage: `url(${imageBlob})`,
@@ -166,7 +220,7 @@ export default function RandomImages(): JSX.Element {
           <ImageContainer>
             {randomImages.map((imageUrl, index) => {
               return (
-                <BlobImageWrap
+                <RadioWrap
                   key={index}
                   style={{
                     backgroundImage: `url(${imageUrl})`,
