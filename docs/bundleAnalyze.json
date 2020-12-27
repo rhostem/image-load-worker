@@ -2,10 +2,10 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.2",
-  "hash": "4806d126d6bad3c9d019",
-  "time": 3199,
-  "builtAt": 1609075958311,
-  "publicPath": "/",
+  "hash": "5120515ba6009ba18f84",
+  "time": 3205,
+  "builtAt": 1609076572639,
+  "publicPath": "/image-load-worker/",
   "outputPath": "/Users/jsyoung/repository/study/image-load-worker/build",
   "assetsByChunkName": {
     "index": "js/index.90657dbab54419c9ed48.js",
@@ -14,7 +14,7 @@
       "css/styles.d9e7585170f460a906e3.css",
       "js/styles.c35ad2d41b4ff0a167ca.js"
     ],
-    "webpack-runtime": "js/webpack-runtime.943d5970d3fff70e6e03.js"
+    "webpack-runtime": "js/webpack-runtime.c4a8621d0f1bb20448de.js"
   },
   "assets": [
     {
@@ -88,8 +88,8 @@
       "emitted": true
     },
     {
-      "name": "js/webpack-runtime.943d5970d3fff70e6e03.js",
-      "size": 1493,
+      "name": "js/webpack-runtime.c4a8621d0f1bb20448de.js",
+      "size": 1511,
       "chunks": [
         3
       ],
@@ -113,7 +113,7 @@
         0
       ],
       "assets": [
-        "js/webpack-runtime.943d5970d3fff70e6e03.js",
+        "js/webpack-runtime.c4a8621d0f1bb20448de.js",
         "css/styles.d9e7585170f460a906e3.css",
         "js/styles.c35ad2d41b4ff0a167ca.js",
         "js/lib-react-dom.09b29318a7469e3e3b9e.js",
@@ -132,7 +132,7 @@
         0
       ],
       "assets": [
-        "js/webpack-runtime.943d5970d3fff70e6e03.js",
+        "js/webpack-runtime.c4a8621d0f1bb20448de.js",
         "css/styles.d9e7585170f460a906e3.css",
         "js/styles.c35ad2d41b4ff0a167ca.js",
         "js/lib-react-dom.09b29318a7469e3e3b9e.js",
@@ -4746,9 +4746,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/internals/export.js",
-          "issuerId": 15,
-          "issuerName": "../node_modules/core-js/internals/export.js",
+          "issuer": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/internals/typed-array-constructor.js",
+          "issuerId": 95,
+          "issuerName": "../node_modules/core-js/internals/typed-array-constructor.js",
           "issuerPath": [
             {
               "id": null,
@@ -4771,14 +4771,14 @@
               "name": "./web_modules/styled-components.js"
             },
             {
-              "id": 61,
-              "identifier": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/modules/es.array.reduce.js",
-              "name": "../node_modules/core-js/modules/es.array.reduce.js"
+              "id": 94,
+              "identifier": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/modules/es.typed-array.uint32-array.js",
+              "name": "../node_modules/core-js/modules/es.typed-array.uint32-array.js"
             },
             {
-              "id": 15,
-              "identifier": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/internals/export.js",
-              "name": "../node_modules/core-js/internals/export.js"
+              "id": 95,
+              "identifier": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/internals/typed-array-constructor.js",
+              "name": "../node_modules/core-js/internals/typed-array-constructor.js"
             }
           ],
           "failed": false,
@@ -5366,9 +5366,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/internals/object-create.js",
-          "issuerId": 28,
-          "issuerName": "../node_modules/core-js/internals/object-create.js",
+          "issuer": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/internals/object-get-own-property-names.js",
+          "issuerId": 41,
+          "issuerName": "../node_modules/core-js/internals/object-get-own-property-names.js",
           "issuerPath": [
             {
               "id": null,
@@ -5401,9 +5401,9 @@
               "name": "../node_modules/core-js/internals/typed-array-constructor.js"
             },
             {
-              "id": 28,
-              "identifier": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/internals/object-create.js",
-              "name": "../node_modules/core-js/internals/object-create.js"
+              "id": 41,
+              "identifier": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/internals/object-get-own-property-names.js",
+              "name": "../node_modules/core-js/internals/object-get-own-property-names.js"
             }
           ],
           "failed": false,
@@ -12313,9 +12313,9 @@
         "webpack-runtime"
       ],
       "files": [
-        "js/webpack-runtime.943d5970d3fff70e6e03.js"
+        "js/webpack-runtime.c4a8621d0f1bb20448de.js"
       ],
-      "hash": "e9df1f4a9028b93fcd3a",
+      "hash": "ea556cf05c0d29076934",
       "siblings": [
         0,
         1,
@@ -16920,9 +16920,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/internals/export.js",
-      "issuerId": 15,
-      "issuerName": "../node_modules/core-js/internals/export.js",
+      "issuer": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/internals/typed-array-constructor.js",
+      "issuerId": 95,
+      "issuerName": "../node_modules/core-js/internals/typed-array-constructor.js",
       "issuerPath": [
         {
           "id": null,
@@ -16945,14 +16945,14 @@
           "name": "./web_modules/styled-components.js"
         },
         {
-          "id": 61,
-          "identifier": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/modules/es.array.reduce.js",
-          "name": "../node_modules/core-js/modules/es.array.reduce.js"
+          "id": 94,
+          "identifier": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/modules/es.typed-array.uint32-array.js",
+          "name": "../node_modules/core-js/modules/es.typed-array.uint32-array.js"
         },
         {
-          "id": 15,
-          "identifier": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/internals/export.js",
-          "name": "../node_modules/core-js/internals/export.js"
+          "id": 95,
+          "identifier": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/internals/typed-array-constructor.js",
+          "name": "../node_modules/core-js/internals/typed-array-constructor.js"
         }
       ],
       "failed": false,
@@ -17540,9 +17540,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/internals/object-create.js",
-      "issuerId": 28,
-      "issuerName": "../node_modules/core-js/internals/object-create.js",
+      "issuer": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/internals/object-get-own-property-names.js",
+      "issuerId": 41,
+      "issuerName": "../node_modules/core-js/internals/object-get-own-property-names.js",
       "issuerPath": [
         {
           "id": null,
@@ -17575,9 +17575,9 @@
           "name": "../node_modules/core-js/internals/typed-array-constructor.js"
         },
         {
-          "id": 28,
-          "identifier": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/internals/object-create.js",
-          "name": "../node_modules/core-js/internals/object-create.js"
+          "id": 41,
+          "identifier": "/Users/jsyoung/repository/study/image-load-worker/node_modules/core-js/internals/object-get-own-property-names.js",
+          "name": "../node_modules/core-js/internals/object-get-own-property-names.js"
         }
       ],
       "failed": false,
@@ -24404,7 +24404,7 @@
     {
       "errors": [],
       "warnings": [],
-      "publicPath": "/",
+      "publicPath": "/image-load-worker/",
       "outputPath": "/Users/jsyoung/repository/study/image-load-worker/build",
       "assetsByChunkName": {},
       "assets": [],
@@ -24446,7 +24446,7 @@
           "files": [
             "*"
           ],
-          "hash": "3836b94445f3be107064",
+          "hash": "1e57fc5945ef5aedd955",
           "siblings": [],
           "parents": [],
           "children": [],
