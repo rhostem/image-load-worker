@@ -18,7 +18,7 @@ module.exports = {
           config.plugins.push(
             new BundleAnalyzerPlugin({
               analyzerMode: 'static',
-              reportFilename: 'docs/bundleAnalyze.html',
+              reportFilefame: 'docs/bundleAnalyze.html',
               defaultSizes: 'parsed',
               openAnalyzer: false,
               generateStatsFile: true,
@@ -40,6 +40,7 @@ module.exports = {
     /* ... */
   },
   buildOptions: {
+    baseUrl: '/image-load-worker', // to use gh-pages
     /* ... */
   },
   proxy: {
