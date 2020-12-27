@@ -3,8 +3,8 @@
   "warnings": [],
   "version": "4.44.2",
   "hash": "4806d126d6bad3c9d019",
-  "time": 4545,
-  "builtAt": 1609075828064,
+  "time": 3199,
+  "builtAt": 1609075958311,
   "publicPath": "/",
   "outputPath": "/Users/jsyoung/repository/study/image-load-worker/build",
   "assetsByChunkName": {
