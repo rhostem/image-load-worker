@@ -6,10 +6,13 @@ import React, {
   useRef,
 } from 'react';
 import styled from 'styled-components';
+import useImageLoadWorker from './hooks/useImageLoadWorker';
 
 const Wrap = styled.div`
   padding: 1rem;
 `;
+
+const LoadingMethodSelector = styled.div``;
 
 export const ImageContainer = styled.div`
   display: flex;
@@ -35,12 +38,17 @@ const BlobImageWrap = styled.div`
   }
 `;
 
+enum LoadingMethod {
+  ALL = 'ALL',
+  WORKER = 'WORKER',
+  DIRECT = 'DIRECT',
+}
+
 export default function RandomImages(): JSX.Element {
-  const [imageTotalCount, setImageTotalCount] = useState(80);
+  const [imageTotalCount, setImageTotalCount] = useState(100);
+  const [loadingMethod, setLoadingMethod] = useState(LoadingMethod.WORKER);
 
-  const [imageBlobs, setImageBlobs] = useState<string[]>([]);
-
-  const images = useMemo(
+  const randomImages = useMemo(
     () =>
       new Array(imageTotalCount)
         .fill(undefined)
@@ -48,7 +56,7 @@ export default function RandomImages(): JSX.Element {
           () =>
             `https://picsum.photos/seed/${Math.floor(
               Math.random() * 10000,
-            )}/1080/1920`,
+            )}/720/1080`,
         ),
     [imageTotalCount],
   );
@@ -58,58 +66,21 @@ export default function RandomImages(): JSX.Element {
     setImageTotalCount(0);
     setTimeout(() => {
       setImageTotalCount(lastCount);
-    }, 400);
+    }, 300);
   }, [imageTotalCount]);
 
-  const worker = useRef<Worker>();
+  const handleChangeLoadingMethod = useCallback(
+    (e) => {
+      console.log(e.target.value);
+      setLoadingMethod(e.target.value);
+      handleClickReloadImages();
+    },
+    [handleClickReloadImages],
+  );
 
-  const loadImagesByWorker = useCallback(async (imageUrls) => {
-    if (!worker.current) {
-      setImageBlobs(new Array(imageUrls.length).fill(undefined));
-
-      const maxWorkers = navigator.hardwareConcurrency || 4;
-      const chunkSizeForWorker = Math.ceil(imageUrls.length / maxWorkers);
-
-      console.log(`chunkSizeForWorker`, chunkSizeForWorker);
-
-      const imageChunks = [];
-
-      for (let i = 0; i < maxWorkers; i++) {
-        const startIndex = i * chunkSizeForWorker;
-        imageChunks.push(
-          imageUrls.slice(startIndex, startIndex + chunkSizeForWorker),
-        );
-      }
-
-      const imagePromises = imageChunks.map(
-        (chunk) =>
-          new Promise<string[]>((resolve) => {
-            const chunkWorker = new Worker(
-              new URL('./ImageLoadWorker.js', import.meta.url),
-            );
-
-            chunkWorker.postMessage(chunk);
-
-            chunkWorker.onmessage = (e) => {
-              resolve(e.data);
-            };
-          }),
-      );
-
-      const imageBlobsChunks = await Promise.all(imagePromises);
-
-      const allImageBlobs = imageBlobsChunks.reduce(
-        (result, chunk) => [...result, ...chunk],
-        [],
-      );
-
-      setImageBlobs(allImageBlobs);
-    }
-  }, []);
-
-  useEffect(() => {
-    loadImagesByWorker(images);
-  }, [images, loadImagesByWorker]);
+  const { imageBlobs } = useImageLoadWorker({
+    images: randomImages,
+  });
 
   return (
     <Wrap>
@@ -128,42 +99,84 @@ export default function RandomImages(): JSX.Element {
           }}
         />
         <button onClick={handleClickReloadImages}>Reload Images</button>
+
+        <LoadingMethodSelector>
+          <input
+            type="radio"
+            name="loadingMethod"
+            id="loadingMethod_all"
+            value={LoadingMethod.ALL}
+            checked={loadingMethod === LoadingMethod.ALL}
+            onChange={handleChangeLoadingMethod}
+          />
+          <label htmlFor="loadingMethod_all">All</label>
+
+          <input
+            type="radio"
+            name="loadingMethod"
+            id="loadingMethod_woker"
+            value={LoadingMethod.WORKER}
+            checked={loadingMethod === LoadingMethod.WORKER}
+            onChange={handleChangeLoadingMethod}
+          />
+          <label htmlFor="loadingMethod_woker">Web Worker</label>
+
+          <input
+            type="radio"
+            name="loadingMethod"
+            id="loadingMethod_direct"
+            value={LoadingMethod.DIRECT}
+            checked={loadingMethod === LoadingMethod.DIRECT}
+            onChange={handleChangeLoadingMethod}
+          />
+          <label htmlFor="loadingMethod_direct">Direct</label>
+        </LoadingMethodSelector>
       </div>
 
-      <h2>Loading by web worker</h2>
-      <ImageContainer>
-        {imageBlobs.map((imageBlob, index) => {
-          return (
-            <BlobImageWrap
-              key={index}
-              style={{
-                backgroundImage: `url(${imageBlob})`,
-              }}
-              className={
-                imageBlob === undefined
-                  ? 'isLoading'
-                  : imageBlob === null
-                  ? 'isError'
-                  : ''
-              }
-            />
-          );
-        })}
-      </ImageContainer>
+      {(loadingMethod === LoadingMethod.ALL ||
+        loadingMethod === LoadingMethod.WORKER) && (
+        <>
+          <h2>Loading by web worker</h2>
+          <ImageContainer>
+            {imageBlobs.map((imageBlob, index) => {
+              return (
+                <BlobImageWrap
+                  key={index}
+                  style={{
+                    backgroundImage: `url(${imageBlob})`,
+                  }}
+                  className={
+                    imageBlob === undefined
+                      ? 'isLoading'
+                      : imageBlob === null
+                      ? 'isError'
+                      : ''
+                  }
+                />
+              );
+            })}
+          </ImageContainer>
+        </>
+      )}
 
-      <h2>Direct loading</h2>
-      <ImageContainer>
-        {images.map((imageUrl, index) => {
-          return (
-            <BlobImageWrap
-              key={index}
-              style={{
-                backgroundImage: `url(${imageUrl})`,
-              }}
-            />
-          );
-        })}
-      </ImageContainer>
+      {(loadingMethod === LoadingMethod.ALL ||
+        loadingMethod === LoadingMethod.DIRECT) && (
+        <div>
+          <h2>Direct loading</h2>
+          <ImageContainer>
+            {randomImages.map((imageUrl, index) => {
+              return (
+                <BlobImageWrap
+                  key={index}
+                  style={{
+                    backgroundImage: `url(${imageUrl})`,
+                  }}
+                />
+              );
+            })}
+          </ImageContainer>
+        </div>
+      )}
     </Wrap>
   );
 }
