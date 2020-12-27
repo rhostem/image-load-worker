@@ -45,7 +45,7 @@ enum LoadingMethod {
 }
 
 export default function RandomImages(): JSX.Element {
-  const [imageTotalCount, setImageTotalCount] = useState(100);
+  const [imageTotalCount, setImageTotalCount] = useState(78);
   const [loadingMethod, setLoadingMethod] = useState(LoadingMethod.WORKER);
 
   const randomImages = useMemo(

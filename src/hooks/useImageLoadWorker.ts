@@ -9,7 +9,28 @@ export default function useImageLoadWorker({ images }: { images: string[] }) {
     [images.length, maxWorkers],
   );
 
-  const loadImagesByWorker = useCallback(
+  const [workers, setWorkers] = useState<Worker[]>([]);
+
+  useEffect(() => {
+    if (workers.length === 0) {
+      setWorkers(
+        new Array(maxWorkers)
+          .fill(undefined)
+          .map(
+            () => new Worker(new URL('./ImageLoadWorker.js', import.meta.url)),
+          ),
+      );
+    }
+
+    return () => {
+      workers.forEach((worker) => worker.terminate());
+    };
+  }, [maxWorkers, workers]);
+
+  /**
+   * 모든 워커의 작업이 끝난 후 이미지를 업데이트한다
+   */
+  const loadAllImagesAtOnce = useCallback(
     async (imageUrls) => {
       if (window.Worker) {
         setImageBlobs(new Array(imageUrls.length).fill(undefined));
@@ -24,17 +45,17 @@ export default function useImageLoadWorker({ images }: { images: string[] }) {
         }
 
         const imagePromises = imageChunks.map(
-          (chunk) =>
+          (chunk, chunkIndex) =>
             new Promise<string[]>((resolve) => {
-              const chunkWorker = new Worker(
-                new URL('./ImageLoadWorker.js', import.meta.url),
-              );
+              const chunkWorker = workers[chunkIndex];
 
-              chunkWorker.postMessage(chunk);
+              if (chunkWorker) {
+                chunkWorker.postMessage(chunk);
 
-              chunkWorker.onmessage = (e) => {
-                resolve(e.data);
-              };
+                chunkWorker.onmessage = (e) => {
+                  resolve(e.data);
+                };
+              }
             }),
         );
 
@@ -48,12 +69,70 @@ export default function useImageLoadWorker({ images }: { images: string[] }) {
         setImageBlobs(allImageBlobs);
       }
     },
-    [chunkSizeForWorker, maxWorkers],
+    [chunkSizeForWorker, maxWorkers, workers],
+  );
+
+  /**
+   * 워커에서 작업이 끝나는 대로 이미지를 업데이트한다
+   */
+  const loadImagesIncrementally = useCallback(
+    async (imageUrls) => {
+      if (window.Worker && workers.length) {
+        const imageBlobs = new Array(imageUrls.length).fill(undefined);
+        setImageBlobs(imageBlobs);
+
+        const imageChunks = [];
+
+        for (let i = 0; i < maxWorkers; i++) {
+          const startIndex = i * chunkSizeForWorker;
+          imageChunks.push(
+            imageUrls.slice(startIndex, startIndex + chunkSizeForWorker),
+          );
+        }
+
+        const imagePromises = imageChunks.map(
+          (chunk, chunkIndex) =>
+            new Promise<{
+              imageUrls: string[];
+              chunkIndex: number;
+            }>((resolve) => {
+              const chunkWorker = workers[chunkIndex];
+
+              if (chunkWorker) {
+                chunkWorker.postMessage(chunk);
+
+                chunkWorker.onmessage = (e) => {
+                  resolve({
+                    imageUrls: e.data,
+                    chunkIndex: chunkIndex,
+                  });
+                };
+              }
+            }),
+        );
+
+        imagePromises.forEach(async (imagePromise) => {
+          try {
+            const { imageUrls, chunkIndex } = await imagePromise;
+
+            imageUrls.forEach((url, index) => {
+              imageBlobs[chunkIndex * chunkSizeForWorker + index] = url;
+            });
+
+            setImageBlobs(imageBlobs.slice());
+          } catch (e) {
+            console.error(e);
+          }
+        });
+      }
+    },
+    [chunkSizeForWorker, maxWorkers, workers],
   );
 
   useEffect(() => {
-    loadImagesByWorker(images);
-  }, [images, loadImagesByWorker]);
+    // loadAllImagesAtOnce(images);
+    loadImagesIncrementally(images);
+  }, [images, loadAllImagesAtOnce, loadImagesIncrementally]);
 
   return {
     imageBlobs,
