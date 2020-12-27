@@ -57,3 +57,5 @@ declare module '*.png' {
 }
 
 /* CUSTOM: ADD YOUR OWN HERE */
+
+declare function postMessage(message: any, transfer?: any[]): void;

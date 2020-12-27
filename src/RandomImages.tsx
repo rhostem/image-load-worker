@@ -1,10 +1,4 @@
-import React, {
-  useState,
-  useEffect,
-  useCallback,
-  useMemo,
-  useRef,
-} from 'react';
+import React, { useState, useCallback, useMemo } from 'react';
 import styled from 'styled-components';
 import useImageLoadWorker from './hooks/useImageLoadWorker';
 
@@ -23,7 +17,7 @@ const RadioGroup = styled.div`
   }
 `;
 
-export const ImageContainer = styled.div`
+const ImageContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin-top: 1rem;
@@ -31,15 +25,20 @@ export const ImageContainer = styled.div`
   margin-right: auto;
 `;
 
-const RadioWrap = styled.div`
+const ImageWrap = styled.div`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 45px;
   height: 80px;
   outline: 1px solid #00d694;
   background-size: cover;
   background-color: #eee;
+  font-size: 10px;
+  transition: 2s ease all;
 
   &.isLoading {
-    background-color: blue;
+    background-color: #ccc;
   }
 
   &.isError {
@@ -59,7 +58,7 @@ enum UpdateStyle {
 }
 
 export default function RandomImages(): JSX.Element {
-  const [imageTotalCount, setImageTotalCount] = useState(78);
+  const [imageTotalCount, setImageTotalCount] = useState(120);
   const [loadingMethod, setLoadingMethod] = useState(LoadingMethod.WORKER);
   const [updateStyle, setUpdateStyle] = useState(UpdateStyle.ALL);
 
@@ -102,12 +101,21 @@ export default function RandomImages(): JSX.Element {
 
   const { imageBlobs } = useImageLoadWorker({
     images: randomImages,
+    incrementalUpdate: updateStyle === UpdateStyle.INCREMENTALLY,
   });
 
   return (
     <Wrap>
-      <h1>Test web worker for image loading </h1>
-
+      <h1>Web worker for image loading </h1>
+      <p>
+        Create multiple(=number of logical processors by{' '}
+        <code>navigator.hardwareConcurrency</code>) web workers and load images
+        simultaneously.
+      </p>
+      <p>
+        DOM is going to be updated with fetched images when every workers job is
+        done or as soon as each worker&apos;s job is done.
+      </p>
       <div>
         <label htmlFor="">
           <b>Image total count </b>
@@ -118,7 +126,7 @@ export default function RandomImages(): JSX.Element {
           name="range"
           value={imageTotalCount}
           min={10}
-          max={200}
+          max={240}
           onChange={(e) => {
             setImageTotalCount(parseInt(e.target.value, 10));
           }}
@@ -194,11 +202,15 @@ export default function RandomImages(): JSX.Element {
           <ImageContainer>
             {imageBlobs.map((imageBlob, index) => {
               return (
-                <RadioWrap
+                <ImageWrap
                   key={index}
-                  style={{
-                    backgroundImage: `url(${imageBlob})`,
-                  }}
+                  style={
+                    imageBlob
+                      ? {
+                          backgroundImage: `url(${imageBlob})`,
+                        }
+                      : {}
+                  }
                   className={
                     imageBlob === undefined
                       ? 'isLoading'
@@ -206,7 +218,10 @@ export default function RandomImages(): JSX.Element {
                       ? 'isError'
                       : ''
                   }
-                />
+                >
+                  {imageBlob === undefined && <span>loding</span>}
+                  {imageBlob === null && <span>error</span>}
+                </ImageWrap>
               );
             })}
           </ImageContainer>
@@ -220,7 +235,7 @@ export default function RandomImages(): JSX.Element {
           <ImageContainer>
             {randomImages.map((imageUrl, index) => {
               return (
-                <RadioWrap
+                <ImageWrap
                   key={index}
                   style={{
                     backgroundImage: `url(${imageUrl})`,

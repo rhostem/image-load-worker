@@ -1,6 +1,12 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
 
-export default function useImageLoadWorker({ images }: { images: string[] }) {
+export default function useImageLoadWorker({
+  images,
+  incrementalUpdate,
+}: {
+  images: string[];
+  incrementalUpdate: boolean;
+}) {
   const [imageBlobs, setImageBlobs] = useState<string[]>([]);
   const maxWorkers = navigator.hardwareConcurrency || 2;
 
@@ -130,9 +136,22 @@ export default function useImageLoadWorker({ images }: { images: string[] }) {
   );
 
   useEffect(() => {
-    // loadAllImagesAtOnce(images);
-    loadImagesIncrementally(images);
-  }, [images, loadAllImagesAtOnce, loadImagesIncrementally]);
+    if (incrementalUpdate) {
+      loadImagesIncrementally(images);
+    } else {
+      loadAllImagesAtOnce(images);
+    }
+  }, [images, incrementalUpdate, loadAllImagesAtOnce, loadImagesIncrementally]);
+
+  useEffect(() => {
+    return () => {
+      if (workers.length > 0) {
+        workers.forEach((worker) => {
+          worker.terminate();
+        });
+      }
+    };
+  }, [workers]);
 
   return {
     imageBlobs,
