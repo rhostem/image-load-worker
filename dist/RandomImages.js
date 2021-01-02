@@ -53,8 +53,8 @@ var UpdateStyle;
   UpdateStyle2["INCREMENTALLY"] = "INCREMENTALLY";
 })(UpdateStyle || (UpdateStyle = {}));
 export default function RandomImages() {
-  const [imageTotalCount, setImageTotalCount] = useState(120);
-  const [loadingMethod, setLoadingMethod] = useState(LoadingMethod.WORKER);
+  const [imageTotalCount, setImageTotalCount] = useState(80);
+  const [loadingMethod, setLoadingMethod] = useState(LoadingMethod.ALL);
   const [updateStyle, setUpdateStyle] = useState(UpdateStyle.ALL);
   const randomImages = useMemo(() => new Array(imageTotalCount).fill(void 0).map(() => `https://picsum.photos/seed/${Math.floor(Math.random() * 1e4)}/720/1080`), [imageTotalCount]);
   const handleClickReloadImages = useCallback(() => {
@@ -72,11 +72,11 @@ export default function RandomImages() {
     setUpdateStyle(e.target.value);
     handleClickReloadImages();
   }, [handleClickReloadImages]);
-  const {imageBlobs} = useImageLoadWorker2({
+  const {imageBlobs, maxWorkers} = useImageLoadWorker2({
     images: randomImages,
     incrementalUpdate: updateStyle === UpdateStyle.INCREMENTALLY
   });
-  return /* @__PURE__ */ React.createElement(Wrap, null, /* @__PURE__ */ React.createElement("h1", null, "Web worker for image loading "), /* @__PURE__ */ React.createElement("p", null, "Create multiple(=number of logical processors by", " ", /* @__PURE__ */ React.createElement("code", null, "navigator.hardwareConcurrency"), ") web workers and load images simultaneously."), /* @__PURE__ */ React.createElement("p", null, "DOM is going to be updated with fetched images when every workers job is done or as soon as each worker's job is done."), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("label", {
+  return /* @__PURE__ */ React.createElement(Wrap, null, /* @__PURE__ */ React.createElement("h1", null, "Web worker for image loading "), /* @__PURE__ */ React.createElement("p", null, "Create multiple(=number of logical processors by", " ", /* @__PURE__ */ React.createElement("code", null, "navigator.hardwareConcurrency"), ") web workers to load images simultaneously."), /* @__PURE__ */ React.createElement("p", null, "DOM is going to be updated with fetched images as soon as worker's job is done."), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("label", {
     htmlFor: ""
   }, /* @__PURE__ */ React.createElement("b", null, "Image total count "), imageTotalCount), /* @__PURE__ */ React.createElement("input", {
     type: "range",
@@ -138,7 +138,9 @@ export default function RandomImages() {
     onChange: handleChangeUpdateStyle
   }), /* @__PURE__ */ React.createElement("label", {
     htmlFor: "updateStyle_increment"
-  }, "Update incrementally"))), (loadingMethod === LoadingMethod.ALL || loadingMethod === LoadingMethod.WORKER) && /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("h2", null, "Loading by web worker"), /* @__PURE__ */ React.createElement(ImageContainer, null, imageBlobs.map((imageBlob, index) => {
+  }, "Update incrementally")), /* @__PURE__ */ React.createElement("div", null), /* @__PURE__ */ React.createElement(RadioGroup, null, /* @__PURE__ */ React.createElement("span", {
+    className: "label"
+  }, /* @__PURE__ */ React.createElement("b", null, "Number of workers")), /* @__PURE__ */ React.createElement("span", null, maxWorkers))), (loadingMethod === LoadingMethod.ALL || loadingMethod === LoadingMethod.WORKER) && /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("h2", null, "Loading by web worker"), /* @__PURE__ */ React.createElement(ImageContainer, null, imageBlobs.map((imageBlob, index) => {
     return /* @__PURE__ */ React.createElement(ImageWrap, {
       key: index,
       style: imageBlob ? {
