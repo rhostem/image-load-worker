@@ -155,5 +155,6 @@ export default function useImageLoadWorker({
 
   return {
     imageBlobs,
+    maxWorkers,
   };
 }

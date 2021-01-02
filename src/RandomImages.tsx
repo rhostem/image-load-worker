@@ -58,8 +58,8 @@ enum UpdateStyle {
 }
 
 export default function RandomImages(): JSX.Element {
-  const [imageTotalCount, setImageTotalCount] = useState(120);
-  const [loadingMethod, setLoadingMethod] = useState(LoadingMethod.WORKER);
+  const [imageTotalCount, setImageTotalCount] = useState(80);
+  const [loadingMethod, setLoadingMethod] = useState(LoadingMethod.ALL);
   const [updateStyle, setUpdateStyle] = useState(UpdateStyle.ALL);
 
   const randomImages = useMemo(
@@ -99,7 +99,7 @@ export default function RandomImages(): JSX.Element {
     [handleClickReloadImages],
   );
 
-  const { imageBlobs } = useImageLoadWorker({
+  const { imageBlobs, maxWorkers } = useImageLoadWorker({
     images: randomImages,
     incrementalUpdate: updateStyle === UpdateStyle.INCREMENTALLY,
   });
@@ -109,12 +109,12 @@ export default function RandomImages(): JSX.Element {
       <h1>Web worker for image loading </h1>
       <p>
         Create multiple(=number of logical processors by{' '}
-        <code>navigator.hardwareConcurrency</code>) web workers and load images
+        <code>navigator.hardwareConcurrency</code>) web workers to load images
         simultaneously.
       </p>
       <p>
-        DOM is going to be updated with fetched images when every workers job is
-        done or as soon as each worker&apos;s job is done.
+        DOM is going to be updated with fetched images as soon as worker&apos;s
+        job is done.
       </p>
       <div>
         <label htmlFor="">
@@ -192,6 +192,13 @@ export default function RandomImages(): JSX.Element {
             onChange={handleChangeUpdateStyle}
           />
           <label htmlFor="updateStyle_increment">Update incrementally</label>
+        </RadioGroup>
+        <div></div>
+        <RadioGroup>
+          <span className={'label'}>
+            <b>Number of workers</b>
+          </span>
+          <span>{maxWorkers}</span>
         </RadioGroup>
       </div>
 
