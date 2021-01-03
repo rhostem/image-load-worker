@@ -3,8 +3,8 @@
   "warnings": [],
   "version": "4.44.2",
   "hash": "6e732005646fb830f559",
-  "time": 5158,
-  "builtAt": 1609582329625,
+  "time": 4091,
+  "builtAt": 1609644416908,
   "publicPath": "/image-load-worker/",
   "outputPath": "/Users/edwin/repository/rhostem/image-load-worker/build",
   "assetsByChunkName": {
@@ -4478,9 +4478,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-from.js",
-          "issuerId": 113,
-          "issuerName": "../node_modules/core-js/internals/array-from.js",
+          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/modules/web.url-search-params.js",
+          "issuerId": 118,
+          "issuerName": "../node_modules/core-js/modules/web.url-search-params.js",
           "issuerPath": [
             {
               "id": null,
@@ -4508,9 +4508,9 @@
               "name": "../node_modules/core-js/modules/web.url.js"
             },
             {
-              "id": 113,
-              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-from.js",
-              "name": "../node_modules/core-js/internals/array-from.js"
+              "id": 118,
+              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/modules/web.url-search-params.js",
+              "name": "../node_modules/core-js/modules/web.url-search-params.js"
             }
           ],
           "failed": false,
@@ -4577,9 +4577,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-from.js",
-          "issuerId": 113,
-          "issuerName": "../node_modules/core-js/internals/array-from.js",
+          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/modules/web.url-search-params.js",
+          "issuerId": 118,
+          "issuerName": "../node_modules/core-js/modules/web.url-search-params.js",
           "issuerPath": [
             {
               "id": null,
@@ -4607,9 +4607,9 @@
               "name": "../node_modules/core-js/modules/web.url.js"
             },
             {
-              "id": 113,
-              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-from.js",
-              "name": "../node_modules/core-js/internals/array-from.js"
+              "id": 118,
+              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/modules/web.url-search-params.js",
+              "name": "../node_modules/core-js/modules/web.url-search-params.js"
             }
           ],
           "failed": false,
@@ -6582,9 +6582,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-define-properties.js",
-          "issuerId": 56,
-          "issuerName": "../node_modules/core-js/internals/object-define-properties.js",
+          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-assign.js",
+          "issuerId": 112,
+          "issuerName": "../node_modules/core-js/internals/object-assign.js",
           "issuerPath": [
             {
               "id": null,
@@ -6612,9 +6612,9 @@
               "name": "../node_modules/core-js/modules/web.url.js"
             },
             {
-              "id": 56,
-              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-define-properties.js",
-              "name": "../node_modules/core-js/internals/object-define-properties.js"
+              "id": 112,
+              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-assign.js",
+              "name": "../node_modules/core-js/internals/object-assign.js"
             }
           ],
           "failed": false,
@@ -7043,9 +7043,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer.js",
-          "issuerId": 99,
-          "issuerName": "../node_modules/core-js/internals/array-buffer.js",
+          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer-view-core.js",
+          "issuerId": 45,
+          "issuerName": "../node_modules/core-js/internals/array-buffer-view-core.js",
           "issuerPath": [
             {
               "id": null,
@@ -7078,9 +7078,9 @@
               "name": "../node_modules/core-js/internals/typed-array-constructor.js"
             },
             {
-              "id": 99,
-              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer.js",
-              "name": "../node_modules/core-js/internals/array-buffer.js"
+              "id": 45,
+              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer-view-core.js",
+              "name": "../node_modules/core-js/internals/array-buffer-view-core.js"
             }
           ],
           "failed": false,
@@ -16697,9 +16697,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-from.js",
-      "issuerId": 113,
-      "issuerName": "../node_modules/core-js/internals/array-from.js",
+      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/modules/web.url-search-params.js",
+      "issuerId": 118,
+      "issuerName": "../node_modules/core-js/modules/web.url-search-params.js",
       "issuerPath": [
         {
           "id": null,
@@ -16727,9 +16727,9 @@
           "name": "../node_modules/core-js/modules/web.url.js"
         },
         {
-          "id": 113,
-          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-from.js",
-          "name": "../node_modules/core-js/internals/array-from.js"
+          "id": 118,
+          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/modules/web.url-search-params.js",
+          "name": "../node_modules/core-js/modules/web.url-search-params.js"
         }
       ],
       "failed": false,
@@ -16796,9 +16796,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-from.js",
-      "issuerId": 113,
-      "issuerName": "../node_modules/core-js/internals/array-from.js",
+      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/modules/web.url-search-params.js",
+      "issuerId": 118,
+      "issuerName": "../node_modules/core-js/modules/web.url-search-params.js",
       "issuerPath": [
         {
           "id": null,
@@ -16826,9 +16826,9 @@
           "name": "../node_modules/core-js/modules/web.url.js"
         },
         {
-          "id": 113,
-          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-from.js",
-          "name": "../node_modules/core-js/internals/array-from.js"
+          "id": 118,
+          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/modules/web.url-search-params.js",
+          "name": "../node_modules/core-js/modules/web.url-search-params.js"
         }
       ],
       "failed": false,
@@ -18801,9 +18801,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-define-properties.js",
-      "issuerId": 56,
-      "issuerName": "../node_modules/core-js/internals/object-define-properties.js",
+      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-assign.js",
+      "issuerId": 112,
+      "issuerName": "../node_modules/core-js/internals/object-assign.js",
       "issuerPath": [
         {
           "id": null,
@@ -18831,9 +18831,9 @@
           "name": "../node_modules/core-js/modules/web.url.js"
         },
         {
-          "id": 56,
-          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-define-properties.js",
-          "name": "../node_modules/core-js/internals/object-define-properties.js"
+          "id": 112,
+          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-assign.js",
+          "name": "../node_modules/core-js/internals/object-assign.js"
         }
       ],
       "failed": false,
@@ -19262,9 +19262,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer.js",
-      "issuerId": 99,
-      "issuerName": "../node_modules/core-js/internals/array-buffer.js",
+      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer-view-core.js",
+      "issuerId": 45,
+      "issuerName": "../node_modules/core-js/internals/array-buffer-view-core.js",
       "issuerPath": [
         {
           "id": null,
@@ -19297,9 +19297,9 @@
           "name": "../node_modules/core-js/internals/typed-array-constructor.js"
         },
         {
-          "id": 99,
-          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer.js",
-          "name": "../node_modules/core-js/internals/array-buffer.js"
+          "id": 45,
+          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer-view-core.js",
+          "name": "../node_modules/core-js/internals/array-buffer-view-core.js"
         }
       ],
       "failed": false,
