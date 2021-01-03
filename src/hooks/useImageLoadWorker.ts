@@ -33,12 +33,25 @@ export default function useImageLoadWorker({
     };
   }, [maxWorkers, workers]);
 
+  const revokeObjectUrls = useCallback((objectUrls: string[]) => {
+    if (objectUrls.length > 0) {
+      objectUrls.forEach((url) => {
+        if (url) {
+          console.log(`url`, url);
+
+          URL.revokeObjectURL(url);
+        }
+      });
+    }
+  }, []);
+
   /**
    * 모든 워커의 작업이 끝난 후 이미지를 업데이트한다
    */
   const loadAllImagesAtOnce = useCallback(
     async (imageUrls) => {
       if (window.Worker) {
+        revokeObjectUrls(imageBlobs);
         setImageBlobs(new Array(imageUrls.length).fill(undefined));
 
         const imageChunks = [];
@@ -152,17 +165,6 @@ export default function useImageLoadWorker({
       }
     };
   }, [workers]);
-
-  useEffect(() => () => {
-    if (imageBlobs.length > 0) {
-      imageBlobs.forEach((blob) => {
-        if (blob) {
-          // releases an existing object URL before setting new blobs
-          URL.revokeObjectURL(blob);
-        }
-      });
-    }
-  });
 
   return {
     imageBlobs,
