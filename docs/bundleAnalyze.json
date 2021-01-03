@@ -2,13 +2,13 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.2",
-  "hash": "6e732005646fb830f559",
-  "time": 4091,
-  "builtAt": 1609644416908,
+  "hash": "d3115ae674e048df1ba5",
+  "time": 5087,
+  "builtAt": 1609647305065,
   "publicPath": "/image-load-worker/",
   "outputPath": "/Users/edwin/repository/rhostem/image-load-worker/build",
   "assetsByChunkName": {
-    "index": "js/index.f97a8a8cec8d49864605.js",
+    "index": "js/index.7b40516c402b112b2e23.js",
     "lib-react-dom": "js/lib-react-dom.09b29318a7469e3e3b9e.js",
     "styles": [
       "css/styles.d9e7585170f460a906e3.css",
@@ -32,8 +32,8 @@
       "emitted": true
     },
     {
-      "name": "js/index.f97a8a8cec8d49864605.js",
-      "size": 99340,
+      "name": "js/index.7b40516c402b112b2e23.js",
+      "size": 99411,
       "chunks": [
         0
       ],
@@ -44,13 +44,13 @@
         "immutable": true,
         "minimized": true,
         "related": {
-          "license": "js/index.f97a8a8cec8d49864605.js.LICENSE.txt"
+          "license": "js/index.7b40516c402b112b2e23.js.LICENSE.txt"
         }
       },
       "emitted": true
     },
     {
-      "name": "js/index.f97a8a8cec8d49864605.js.LICENSE.txt",
+      "name": "js/index.7b40516c402b112b2e23.js.LICENSE.txt",
       "size": 297,
       "chunks": [],
       "chunkNames": [],
@@ -117,7 +117,7 @@
         "css/styles.d9e7585170f460a906e3.css",
         "js/styles.c35ad2d41b4ff0a167ca.js",
         "js/lib-react-dom.09b29318a7469e3e3b9e.js",
-        "js/index.f97a8a8cec8d49864605.js"
+        "js/index.7b40516c402b112b2e23.js"
       ],
       "children": {},
       "childAssets": {}
@@ -136,7 +136,7 @@
         "css/styles.d9e7585170f460a906e3.css",
         "js/styles.c35ad2d41b4ff0a167ca.js",
         "js/lib-react-dom.09b29318a7469e3e3b9e.js",
-        "js/index.f97a8a8cec8d49864605.js"
+        "js/index.7b40516c402b112b2e23.js"
       ],
       "children": {},
       "childAssets": {}
@@ -148,14 +148,14 @@
       "rendered": true,
       "initial": true,
       "entry": false,
-      "size": 221879,
+      "size": 221991,
       "names": [
         "index"
       ],
       "files": [
-        "js/index.f97a8a8cec8d49864605.js"
+        "js/index.7b40516c402b112b2e23.js"
       ],
-      "hash": "e13a3be3ea70fe09bd17",
+      "hash": "f081f4c3a906db41c745",
       "siblings": [
         1,
         2,
@@ -4478,9 +4478,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/modules/web.url-search-params.js",
-          "issuerId": 118,
-          "issuerName": "../node_modules/core-js/modules/web.url-search-params.js",
+          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-from.js",
+          "issuerId": 113,
+          "issuerName": "../node_modules/core-js/internals/array-from.js",
           "issuerPath": [
             {
               "id": null,
@@ -4508,9 +4508,9 @@
               "name": "../node_modules/core-js/modules/web.url.js"
             },
             {
-              "id": 118,
-              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/modules/web.url-search-params.js",
-              "name": "../node_modules/core-js/modules/web.url-search-params.js"
+              "id": 113,
+              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-from.js",
+              "name": "../node_modules/core-js/internals/array-from.js"
             }
           ],
           "failed": false,
@@ -4577,9 +4577,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/modules/web.url-search-params.js",
-          "issuerId": 118,
-          "issuerName": "../node_modules/core-js/modules/web.url-search-params.js",
+          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-from.js",
+          "issuerId": 113,
+          "issuerName": "../node_modules/core-js/internals/array-from.js",
           "issuerPath": [
             {
               "id": null,
@@ -4607,9 +4607,9 @@
               "name": "../node_modules/core-js/modules/web.url.js"
             },
             {
-              "id": 118,
-              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/modules/web.url-search-params.js",
-              "name": "../node_modules/core-js/modules/web.url-search-params.js"
+              "id": 113,
+              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-from.js",
+              "name": "../node_modules/core-js/internals/array-from.js"
             }
           ],
           "failed": false,
@@ -6582,9 +6582,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-assign.js",
-          "issuerId": 112,
-          "issuerName": "../node_modules/core-js/internals/object-assign.js",
+          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-define-properties.js",
+          "issuerId": 56,
+          "issuerName": "../node_modules/core-js/internals/object-define-properties.js",
           "issuerPath": [
             {
               "id": null,
@@ -6612,9 +6612,9 @@
               "name": "../node_modules/core-js/modules/web.url.js"
             },
             {
-              "id": 112,
-              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-assign.js",
-              "name": "../node_modules/core-js/internals/object-assign.js"
+              "id": 56,
+              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-define-properties.js",
+              "name": "../node_modules/core-js/internals/object-define-properties.js"
             }
           ],
           "failed": false,
@@ -7043,9 +7043,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer-view-core.js",
-          "issuerId": 45,
-          "issuerName": "../node_modules/core-js/internals/array-buffer-view-core.js",
+          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer.js",
+          "issuerId": 99,
+          "issuerName": "../node_modules/core-js/internals/array-buffer.js",
           "issuerPath": [
             {
               "id": null,
@@ -7078,9 +7078,9 @@
               "name": "../node_modules/core-js/internals/typed-array-constructor.js"
             },
             {
-              "id": 45,
-              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer-view-core.js",
-              "name": "../node_modules/core-js/internals/array-buffer-view-core.js"
+              "id": 99,
+              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer.js",
+              "name": "../node_modules/core-js/internals/array-buffer.js"
             }
           ],
           "failed": false,
@@ -11002,7 +11002,7 @@
           "name": "./dist/index.js + 7 modules",
           "index": 0,
           "index2": 128,
-          "size": 54134,
+          "size": 54246,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -11374,6 +11374,15 @@
                   "type": "harmony import specifier",
                   "userRequest": "../../web_modules/react.js",
                   "loc": "1:3025-3034"
+                },
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/babel-loader/lib/index.js??ref--4-0!/Users/edwin/repository/rhostem/image-load-worker/node_modules/@snowpack/plugin-webpack/plugins/import-meta-fix.js!/Users/edwin/repository/rhostem/image-load-worker/node_modules/@snowpack/plugin-webpack/plugins/proxy-import-resolve.js!/Users/edwin/repository/rhostem/image-load-worker/build/dist/hooks/useImageLoadWorker.js",
+                  "module": "./dist/hooks/useImageLoadWorker.js",
+                  "moduleName": "./dist/hooks/useImageLoadWorker.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "../../web_modules/react.js",
+                  "loc": "1:3135-3144"
                 },
                 {
                   "moduleId": null,
@@ -12094,7 +12103,7 @@
               "name": "./dist/hooks/useImageLoadWorker.js",
               "index": 115,
               "index2": 123,
-              "size": 3166,
+              "size": 3278,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -12152,7 +12161,7 @@
               ],
               "optimizationBailout": [],
               "depth": 3,
-              "source": "import\"core-js/modules/es.array.reduce.js\";import\"core-js/modules/web.dom-collections.iterator.js\";import\"core-js/modules/web.url.js\";function getAbsoluteUrl(relativeUrl){const publicPath=__webpack_public_path__;let url='';if(!publicPath||publicPath.indexOf('://')<0){url+=window.location.protocol+'//'+window.location.host;}if(publicPath){url+=publicPath;}else{url+='/';}return url+relativeUrl;}import __SNOWPACK_ENV__ from'../../__snowpack__/env.js';({url:getAbsoluteUrl('dist/hooks/useImageLoadWorker.js'),env:__SNOWPACK_ENV__}).env=__SNOWPACK_ENV__;import{useState,useEffect,useCallback,useMemo}from\"../../web_modules/react.js\";export default function useImageLoadWorker({images,incrementalUpdate}){const[imageBlobs,setImageBlobs]=useState([]);const maxWorkers=navigator.hardwareConcurrency||2;const chunkSizeForWorker=useMemo(()=>Math.ceil(images.length/maxWorkers),[images.length,maxWorkers]);const[workers,setWorkers]=useState([]);useEffect(()=>{if(workers.length===0){setWorkers(new Array(maxWorkers).fill(void 0).map(()=>new Worker(new URL(\"./ImageLoadWorker.js\",{url:getAbsoluteUrl('dist/hooks/useImageLoadWorker.js'),env:__SNOWPACK_ENV__}.url))));}return()=>{workers.forEach(worker=>worker.terminate());};},[maxWorkers,workers]);const loadAllImagesAtOnce=useCallback(async imageUrls=>{if(window.Worker){setImageBlobs(new Array(imageUrls.length).fill(void 0));const imageChunks=[];for(let i=0;i<maxWorkers;i++){const startIndex=i*chunkSizeForWorker;imageChunks.push(imageUrls.slice(startIndex,startIndex+chunkSizeForWorker));}const imagePromises=imageChunks.map((chunk,chunkIndex)=>new Promise(resolve=>{const chunkWorker=workers[chunkIndex];if(chunkWorker){chunkWorker.postMessage(chunk);chunkWorker.onmessage=e=>{resolve(e.data);};}}));const imageBlobsChunks=await Promise.all(imagePromises);const allImageBlobs=imageBlobsChunks.reduce((result,chunk)=>[...result,...chunk],[]);setImageBlobs(allImageBlobs);}},[chunkSizeForWorker,maxWorkers,workers]);const loadImagesIncrementally=useCallback(async imageUrls=>{if(window.Worker&&workers.length){const imageBlobs2=new Array(imageUrls.length).fill(void 0);setImageBlobs(imageBlobs2);const imageChunks=[];for(let i=0;i<maxWorkers;i++){const startIndex=i*chunkSizeForWorker;imageChunks.push(imageUrls.slice(startIndex,startIndex+chunkSizeForWorker));}const imagePromises=imageChunks.map((chunk,chunkIndex)=>new Promise(resolve=>{const chunkWorker=workers[chunkIndex];if(chunkWorker){chunkWorker.postMessage(chunk);chunkWorker.onmessage=e=>{resolve({imageUrls:e.data,chunkIndex});};}}));imagePromises.forEach(async imagePromise=>{try{const{imageUrls:imageUrls2,chunkIndex}=await imagePromise;imageUrls2.forEach((url,index)=>{imageBlobs2[chunkIndex*chunkSizeForWorker+index]=url;});setImageBlobs(imageBlobs2.slice());}catch(e){console.error(e);}});}},[chunkSizeForWorker,maxWorkers,workers]);useEffect(()=>{if(incrementalUpdate){loadImagesIncrementally(images);}else{loadAllImagesAtOnce(images);}},[images,incrementalUpdate,loadAllImagesAtOnce,loadImagesIncrementally]);useEffect(()=>{return()=>{if(workers.length>0){workers.forEach(worker=>{worker.terminate();});}};},[workers]);return{imageBlobs,maxWorkers};}"
+              "source": "import\"core-js/modules/es.array.reduce.js\";import\"core-js/modules/web.dom-collections.iterator.js\";import\"core-js/modules/web.url.js\";function getAbsoluteUrl(relativeUrl){const publicPath=__webpack_public_path__;let url='';if(!publicPath||publicPath.indexOf('://')<0){url+=window.location.protocol+'//'+window.location.host;}if(publicPath){url+=publicPath;}else{url+='/';}return url+relativeUrl;}import __SNOWPACK_ENV__ from'../../__snowpack__/env.js';({url:getAbsoluteUrl('dist/hooks/useImageLoadWorker.js'),env:__SNOWPACK_ENV__}).env=__SNOWPACK_ENV__;import{useState,useEffect,useCallback,useMemo}from\"../../web_modules/react.js\";export default function useImageLoadWorker({images,incrementalUpdate}){const[imageBlobs,setImageBlobs]=useState([]);const maxWorkers=navigator.hardwareConcurrency||2;const chunkSizeForWorker=useMemo(()=>Math.ceil(images.length/maxWorkers),[images.length,maxWorkers]);const[workers,setWorkers]=useState([]);useEffect(()=>{if(workers.length===0){setWorkers(new Array(maxWorkers).fill(void 0).map(()=>new Worker(new URL(\"./ImageLoadWorker.js\",{url:getAbsoluteUrl('dist/hooks/useImageLoadWorker.js'),env:__SNOWPACK_ENV__}.url))));}return()=>{workers.forEach(worker=>worker.terminate());};},[maxWorkers,workers]);const loadAllImagesAtOnce=useCallback(async imageUrls=>{if(window.Worker){setImageBlobs(new Array(imageUrls.length).fill(void 0));const imageChunks=[];for(let i=0;i<maxWorkers;i++){const startIndex=i*chunkSizeForWorker;imageChunks.push(imageUrls.slice(startIndex,startIndex+chunkSizeForWorker));}const imagePromises=imageChunks.map((chunk,chunkIndex)=>new Promise(resolve=>{const chunkWorker=workers[chunkIndex];if(chunkWorker){chunkWorker.postMessage(chunk);chunkWorker.onmessage=e=>{resolve(e.data);};}}));const imageBlobsChunks=await Promise.all(imagePromises);const allImageBlobs=imageBlobsChunks.reduce((result,chunk)=>[...result,...chunk],[]);setImageBlobs(allImageBlobs);}},[chunkSizeForWorker,maxWorkers,workers]);const loadImagesIncrementally=useCallback(async imageUrls=>{if(window.Worker&&workers.length){const imageBlobs2=new Array(imageUrls.length).fill(void 0);setImageBlobs(imageBlobs2);const imageChunks=[];for(let i=0;i<maxWorkers;i++){const startIndex=i*chunkSizeForWorker;imageChunks.push(imageUrls.slice(startIndex,startIndex+chunkSizeForWorker));}const imagePromises=imageChunks.map((chunk,chunkIndex)=>new Promise(resolve=>{const chunkWorker=workers[chunkIndex];if(chunkWorker){chunkWorker.postMessage(chunk);chunkWorker.onmessage=e=>{resolve({imageUrls:e.data,chunkIndex});};}}));imagePromises.forEach(async imagePromise=>{try{const{imageUrls:imageUrls2,chunkIndex}=await imagePromise;imageUrls2.forEach((url,index)=>{imageBlobs2[chunkIndex*chunkSizeForWorker+index]=url;});setImageBlobs(imageBlobs2.slice());}catch(e){console.error(e);}});}},[chunkSizeForWorker,maxWorkers,workers]);useEffect(()=>{if(incrementalUpdate){loadImagesIncrementally(images);}else{loadAllImagesAtOnce(images);}},[images,incrementalUpdate,loadAllImagesAtOnce,loadImagesIncrementally]);useEffect(()=>{return()=>{if(workers.length>0){workers.forEach(worker=>{worker.terminate();});}};},[workers]);useEffect(()=>()=>{if(imageBlobs.length>0){imageBlobs.forEach(blob=>{if(blob){URL.revokeObjectURL(blob);}});}});return{imageBlobs,maxWorkers};}"
             }
           ],
           "filteredModules": 0
@@ -16697,9 +16706,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/modules/web.url-search-params.js",
-      "issuerId": 118,
-      "issuerName": "../node_modules/core-js/modules/web.url-search-params.js",
+      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-from.js",
+      "issuerId": 113,
+      "issuerName": "../node_modules/core-js/internals/array-from.js",
       "issuerPath": [
         {
           "id": null,
@@ -16727,9 +16736,9 @@
           "name": "../node_modules/core-js/modules/web.url.js"
         },
         {
-          "id": 118,
-          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/modules/web.url-search-params.js",
-          "name": "../node_modules/core-js/modules/web.url-search-params.js"
+          "id": 113,
+          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-from.js",
+          "name": "../node_modules/core-js/internals/array-from.js"
         }
       ],
       "failed": false,
@@ -16796,9 +16805,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/modules/web.url-search-params.js",
-      "issuerId": 118,
-      "issuerName": "../node_modules/core-js/modules/web.url-search-params.js",
+      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-from.js",
+      "issuerId": 113,
+      "issuerName": "../node_modules/core-js/internals/array-from.js",
       "issuerPath": [
         {
           "id": null,
@@ -16826,9 +16835,9 @@
           "name": "../node_modules/core-js/modules/web.url.js"
         },
         {
-          "id": 118,
-          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/modules/web.url-search-params.js",
-          "name": "../node_modules/core-js/modules/web.url-search-params.js"
+          "id": 113,
+          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-from.js",
+          "name": "../node_modules/core-js/internals/array-from.js"
         }
       ],
       "failed": false,
@@ -18801,9 +18810,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-assign.js",
-      "issuerId": 112,
-      "issuerName": "../node_modules/core-js/internals/object-assign.js",
+      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-define-properties.js",
+      "issuerId": 56,
+      "issuerName": "../node_modules/core-js/internals/object-define-properties.js",
       "issuerPath": [
         {
           "id": null,
@@ -18831,9 +18840,9 @@
           "name": "../node_modules/core-js/modules/web.url.js"
         },
         {
-          "id": 112,
-          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-assign.js",
-          "name": "../node_modules/core-js/internals/object-assign.js"
+          "id": 56,
+          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-define-properties.js",
+          "name": "../node_modules/core-js/internals/object-define-properties.js"
         }
       ],
       "failed": false,
@@ -19262,9 +19271,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer-view-core.js",
-      "issuerId": 45,
-      "issuerName": "../node_modules/core-js/internals/array-buffer-view-core.js",
+      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer.js",
+      "issuerId": 99,
+      "issuerName": "../node_modules/core-js/internals/array-buffer.js",
       "issuerPath": [
         {
           "id": null,
@@ -19297,9 +19306,9 @@
           "name": "../node_modules/core-js/internals/typed-array-constructor.js"
         },
         {
-          "id": 45,
-          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer-view-core.js",
-          "name": "../node_modules/core-js/internals/array-buffer-view-core.js"
+          "id": 99,
+          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer.js",
+          "name": "../node_modules/core-js/internals/array-buffer.js"
         }
       ],
       "failed": false,
@@ -23279,7 +23288,7 @@
       "name": "./dist/index.js + 7 modules",
       "index": 0,
       "index2": 128,
-      "size": 54134,
+      "size": 54246,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -23651,6 +23660,15 @@
               "type": "harmony import specifier",
               "userRequest": "../../web_modules/react.js",
               "loc": "1:3025-3034"
+            },
+            {
+              "moduleId": null,
+              "moduleIdentifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/babel-loader/lib/index.js??ref--4-0!/Users/edwin/repository/rhostem/image-load-worker/node_modules/@snowpack/plugin-webpack/plugins/import-meta-fix.js!/Users/edwin/repository/rhostem/image-load-worker/node_modules/@snowpack/plugin-webpack/plugins/proxy-import-resolve.js!/Users/edwin/repository/rhostem/image-load-worker/build/dist/hooks/useImageLoadWorker.js",
+              "module": "./dist/hooks/useImageLoadWorker.js",
+              "moduleName": "./dist/hooks/useImageLoadWorker.js",
+              "type": "harmony import specifier",
+              "userRequest": "../../web_modules/react.js",
+              "loc": "1:3135-3144"
             },
             {
               "moduleId": null,
@@ -24371,7 +24389,7 @@
           "name": "./dist/hooks/useImageLoadWorker.js",
           "index": 115,
           "index2": 123,
-          "size": 3166,
+          "size": 3278,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -24429,7 +24447,7 @@
           ],
           "optimizationBailout": [],
           "depth": 3,
-          "source": "import\"core-js/modules/es.array.reduce.js\";import\"core-js/modules/web.dom-collections.iterator.js\";import\"core-js/modules/web.url.js\";function getAbsoluteUrl(relativeUrl){const publicPath=__webpack_public_path__;let url='';if(!publicPath||publicPath.indexOf('://')<0){url+=window.location.protocol+'//'+window.location.host;}if(publicPath){url+=publicPath;}else{url+='/';}return url+relativeUrl;}import __SNOWPACK_ENV__ from'../../__snowpack__/env.js';({url:getAbsoluteUrl('dist/hooks/useImageLoadWorker.js'),env:__SNOWPACK_ENV__}).env=__SNOWPACK_ENV__;import{useState,useEffect,useCallback,useMemo}from\"../../web_modules/react.js\";export default function useImageLoadWorker({images,incrementalUpdate}){const[imageBlobs,setImageBlobs]=useState([]);const maxWorkers=navigator.hardwareConcurrency||2;const chunkSizeForWorker=useMemo(()=>Math.ceil(images.length/maxWorkers),[images.length,maxWorkers]);const[workers,setWorkers]=useState([]);useEffect(()=>{if(workers.length===0){setWorkers(new Array(maxWorkers).fill(void 0).map(()=>new Worker(new URL(\"./ImageLoadWorker.js\",{url:getAbsoluteUrl('dist/hooks/useImageLoadWorker.js'),env:__SNOWPACK_ENV__}.url))));}return()=>{workers.forEach(worker=>worker.terminate());};},[maxWorkers,workers]);const loadAllImagesAtOnce=useCallback(async imageUrls=>{if(window.Worker){setImageBlobs(new Array(imageUrls.length).fill(void 0));const imageChunks=[];for(let i=0;i<maxWorkers;i++){const startIndex=i*chunkSizeForWorker;imageChunks.push(imageUrls.slice(startIndex,startIndex+chunkSizeForWorker));}const imagePromises=imageChunks.map((chunk,chunkIndex)=>new Promise(resolve=>{const chunkWorker=workers[chunkIndex];if(chunkWorker){chunkWorker.postMessage(chunk);chunkWorker.onmessage=e=>{resolve(e.data);};}}));const imageBlobsChunks=await Promise.all(imagePromises);const allImageBlobs=imageBlobsChunks.reduce((result,chunk)=>[...result,...chunk],[]);setImageBlobs(allImageBlobs);}},[chunkSizeForWorker,maxWorkers,workers]);const loadImagesIncrementally=useCallback(async imageUrls=>{if(window.Worker&&workers.length){const imageBlobs2=new Array(imageUrls.length).fill(void 0);setImageBlobs(imageBlobs2);const imageChunks=[];for(let i=0;i<maxWorkers;i++){const startIndex=i*chunkSizeForWorker;imageChunks.push(imageUrls.slice(startIndex,startIndex+chunkSizeForWorker));}const imagePromises=imageChunks.map((chunk,chunkIndex)=>new Promise(resolve=>{const chunkWorker=workers[chunkIndex];if(chunkWorker){chunkWorker.postMessage(chunk);chunkWorker.onmessage=e=>{resolve({imageUrls:e.data,chunkIndex});};}}));imagePromises.forEach(async imagePromise=>{try{const{imageUrls:imageUrls2,chunkIndex}=await imagePromise;imageUrls2.forEach((url,index)=>{imageBlobs2[chunkIndex*chunkSizeForWorker+index]=url;});setImageBlobs(imageBlobs2.slice());}catch(e){console.error(e);}});}},[chunkSizeForWorker,maxWorkers,workers]);useEffect(()=>{if(incrementalUpdate){loadImagesIncrementally(images);}else{loadAllImagesAtOnce(images);}},[images,incrementalUpdate,loadAllImagesAtOnce,loadImagesIncrementally]);useEffect(()=>{return()=>{if(workers.length>0){workers.forEach(worker=>{worker.terminate();});}};},[workers]);return{imageBlobs,maxWorkers};}"
+          "source": "import\"core-js/modules/es.array.reduce.js\";import\"core-js/modules/web.dom-collections.iterator.js\";import\"core-js/modules/web.url.js\";function getAbsoluteUrl(relativeUrl){const publicPath=__webpack_public_path__;let url='';if(!publicPath||publicPath.indexOf('://')<0){url+=window.location.protocol+'//'+window.location.host;}if(publicPath){url+=publicPath;}else{url+='/';}return url+relativeUrl;}import __SNOWPACK_ENV__ from'../../__snowpack__/env.js';({url:getAbsoluteUrl('dist/hooks/useImageLoadWorker.js'),env:__SNOWPACK_ENV__}).env=__SNOWPACK_ENV__;import{useState,useEffect,useCallback,useMemo}from\"../../web_modules/react.js\";export default function useImageLoadWorker({images,incrementalUpdate}){const[imageBlobs,setImageBlobs]=useState([]);const maxWorkers=navigator.hardwareConcurrency||2;const chunkSizeForWorker=useMemo(()=>Math.ceil(images.length/maxWorkers),[images.length,maxWorkers]);const[workers,setWorkers]=useState([]);useEffect(()=>{if(workers.length===0){setWorkers(new Array(maxWorkers).fill(void 0).map(()=>new Worker(new URL(\"./ImageLoadWorker.js\",{url:getAbsoluteUrl('dist/hooks/useImageLoadWorker.js'),env:__SNOWPACK_ENV__}.url))));}return()=>{workers.forEach(worker=>worker.terminate());};},[maxWorkers,workers]);const loadAllImagesAtOnce=useCallback(async imageUrls=>{if(window.Worker){setImageBlobs(new Array(imageUrls.length).fill(void 0));const imageChunks=[];for(let i=0;i<maxWorkers;i++){const startIndex=i*chunkSizeForWorker;imageChunks.push(imageUrls.slice(startIndex,startIndex+chunkSizeForWorker));}const imagePromises=imageChunks.map((chunk,chunkIndex)=>new Promise(resolve=>{const chunkWorker=workers[chunkIndex];if(chunkWorker){chunkWorker.postMessage(chunk);chunkWorker.onmessage=e=>{resolve(e.data);};}}));const imageBlobsChunks=await Promise.all(imagePromises);const allImageBlobs=imageBlobsChunks.reduce((result,chunk)=>[...result,...chunk],[]);setImageBlobs(allImageBlobs);}},[chunkSizeForWorker,maxWorkers,workers]);const loadImagesIncrementally=useCallback(async imageUrls=>{if(window.Worker&&workers.length){const imageBlobs2=new Array(imageUrls.length).fill(void 0);setImageBlobs(imageBlobs2);const imageChunks=[];for(let i=0;i<maxWorkers;i++){const startIndex=i*chunkSizeForWorker;imageChunks.push(imageUrls.slice(startIndex,startIndex+chunkSizeForWorker));}const imagePromises=imageChunks.map((chunk,chunkIndex)=>new Promise(resolve=>{const chunkWorker=workers[chunkIndex];if(chunkWorker){chunkWorker.postMessage(chunk);chunkWorker.onmessage=e=>{resolve({imageUrls:e.data,chunkIndex});};}}));imagePromises.forEach(async imagePromise=>{try{const{imageUrls:imageUrls2,chunkIndex}=await imagePromise;imageUrls2.forEach((url,index)=>{imageBlobs2[chunkIndex*chunkSizeForWorker+index]=url;});setImageBlobs(imageBlobs2.slice());}catch(e){console.error(e);}});}},[chunkSizeForWorker,maxWorkers,workers]);useEffect(()=>{if(incrementalUpdate){loadImagesIncrementally(images);}else{loadAllImagesAtOnce(images);}},[images,incrementalUpdate,loadAllImagesAtOnce,loadImagesIncrementally]);useEffect(()=>{return()=>{if(workers.length>0){workers.forEach(worker=>{worker.terminate();});}};},[workers]);useEffect(()=>()=>{if(imageBlobs.length>0){imageBlobs.forEach(blob=>{if(blob){URL.revokeObjectURL(blob);}});}});return{imageBlobs,maxWorkers};}"
         }
       ],
       "filteredModules": 0

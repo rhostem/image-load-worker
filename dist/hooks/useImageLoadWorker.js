@@ -90,6 +90,15 @@ export default function useImageLoadWorker({
       }
     };
   }, [workers]);
+  useEffect(() => () => {
+    if (imageBlobs.length > 0) {
+      imageBlobs.forEach((blob) => {
+        if (blob) {
+          URL.revokeObjectURL(blob);
+        }
+      });
+    }
+  });
   return {
     imageBlobs,
     maxWorkers
