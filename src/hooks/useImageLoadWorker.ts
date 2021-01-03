@@ -153,6 +153,17 @@ export default function useImageLoadWorker({
     };
   }, [workers]);
 
+  useEffect(() => () => {
+    if (imageBlobs.length > 0) {
+      imageBlobs.forEach((blob) => {
+        if (blob) {
+          // releases an existing object URL before setting new blobs
+          URL.revokeObjectURL(blob);
+        }
+      });
+    }
+  });
+
   return {
     imageBlobs,
     maxWorkers,
