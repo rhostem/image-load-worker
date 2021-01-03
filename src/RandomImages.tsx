@@ -226,7 +226,7 @@ export default function RandomImages(): JSX.Element {
                       : ''
                   }
                 >
-                  {imageBlob === undefined && <span>loding</span>}
+                  {imageBlob === undefined && <span>loading</span>}
                   {imageBlob === null && <span>error</span>}
                 </ImageWrap>
               );
