@@ -2,13 +2,13 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.2",
-  "hash": "d3498b5c988a541c9eef",
-  "time": 5525,
-  "builtAt": 1609677077738,
+  "hash": "b98f1867ad35857e0941",
+  "time": 5030,
+  "builtAt": 1609677236941,
   "publicPath": "/image-load-worker/",
   "outputPath": "/Users/edwin/repository/rhostem/image-load-worker/build",
   "assetsByChunkName": {
-    "index": "js/index.46d4702ff05627c0cb62.js",
+    "index": "js/index.fb215bd46f754ee06b5d.js",
     "lib-react-dom": "js/lib-react-dom.09b29318a7469e3e3b9e.js",
     "styles": [
       "css/styles.d9e7585170f460a906e3.css",
@@ -32,8 +32,8 @@
       "emitted": true
     },
     {
-      "name": "js/index.46d4702ff05627c0cb62.js",
-      "size": 99416,
+      "name": "js/index.fb215bd46f754ee06b5d.js",
+      "size": 99417,
       "chunks": [
         0
       ],
@@ -44,13 +44,13 @@
         "immutable": true,
         "minimized": true,
         "related": {
-          "license": "js/index.46d4702ff05627c0cb62.js.LICENSE.txt"
+          "license": "js/index.fb215bd46f754ee06b5d.js.LICENSE.txt"
         }
       },
       "emitted": true
     },
     {
-      "name": "js/index.46d4702ff05627c0cb62.js.LICENSE.txt",
+      "name": "js/index.fb215bd46f754ee06b5d.js.LICENSE.txt",
       "size": 297,
       "chunks": [],
       "chunkNames": [],
@@ -117,7 +117,7 @@
         "css/styles.d9e7585170f460a906e3.css",
         "js/styles.c35ad2d41b4ff0a167ca.js",
         "js/lib-react-dom.09b29318a7469e3e3b9e.js",
-        "js/index.46d4702ff05627c0cb62.js"
+        "js/index.fb215bd46f754ee06b5d.js"
       ],
       "children": {},
       "childAssets": {}
@@ -136,7 +136,7 @@
         "css/styles.d9e7585170f460a906e3.css",
         "js/styles.c35ad2d41b4ff0a167ca.js",
         "js/lib-react-dom.09b29318a7469e3e3b9e.js",
-        "js/index.46d4702ff05627c0cb62.js"
+        "js/index.fb215bd46f754ee06b5d.js"
       ],
       "children": {},
       "childAssets": {}
@@ -148,14 +148,14 @@
       "rendered": true,
       "initial": true,
       "entry": false,
-      "size": 222049,
+      "size": 222050,
       "names": [
         "index"
       ],
       "files": [
-        "js/index.46d4702ff05627c0cb62.js"
+        "js/index.fb215bd46f754ee06b5d.js"
       ],
-      "hash": "7c190591411323280db5",
+      "hash": "eaa25143aafa85802611",
       "siblings": [
         1,
         2,
@@ -5366,9 +5366,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-create.js",
-          "issuerId": 28,
-          "issuerName": "../node_modules/core-js/internals/object-create.js",
+          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-get-own-property-names.js",
+          "issuerId": 41,
+          "issuerName": "../node_modules/core-js/internals/object-get-own-property-names.js",
           "issuerPath": [
             {
               "id": null,
@@ -5401,9 +5401,9 @@
               "name": "../node_modules/core-js/internals/typed-array-constructor.js"
             },
             {
-              "id": 28,
-              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-create.js",
-              "name": "../node_modules/core-js/internals/object-create.js"
+              "id": 41,
+              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-get-own-property-names.js",
+              "name": "../node_modules/core-js/internals/object-get-own-property-names.js"
             }
           ],
           "failed": false,
@@ -7043,9 +7043,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer-view-core.js",
-          "issuerId": 45,
-          "issuerName": "../node_modules/core-js/internals/array-buffer-view-core.js",
+          "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer.js",
+          "issuerId": 99,
+          "issuerName": "../node_modules/core-js/internals/array-buffer.js",
           "issuerPath": [
             {
               "id": null,
@@ -7078,9 +7078,9 @@
               "name": "../node_modules/core-js/internals/typed-array-constructor.js"
             },
             {
-              "id": 45,
-              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer-view-core.js",
-              "name": "../node_modules/core-js/internals/array-buffer-view-core.js"
+              "id": 99,
+              "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer.js",
+              "name": "../node_modules/core-js/internals/array-buffer.js"
             }
           ],
           "failed": false,
@@ -11002,7 +11002,7 @@
           "name": "./dist/index.js + 7 modules",
           "index": 0,
           "index2": 128,
-          "size": 54304,
+          "size": 54305,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -11787,7 +11787,7 @@
                   "moduleName": "./dist/RandomImages.js",
                   "type": "harmony import specifier",
                   "userRequest": "../web_modules/react.js",
-                  "loc": "37:4954-4959"
+                  "loc": "37:4955-4960"
                 },
                 {
                   "moduleId": null,
@@ -11796,7 +11796,7 @@
                   "moduleName": "./dist/RandomImages.js",
                   "type": "harmony import specifier",
                   "userRequest": "../web_modules/react.js",
-                  "loc": "37:5091-5096"
+                  "loc": "37:5092-5097"
                 },
                 {
                   "moduleId": null,
@@ -11805,7 +11805,7 @@
                   "moduleName": "./dist/RandomImages.js",
                   "type": "harmony import specifier",
                   "userRequest": "../web_modules/react.js",
-                  "loc": "37:5137-5142"
+                  "loc": "37:5138-5143"
                 },
                 {
                   "moduleId": null,
@@ -11814,7 +11814,7 @@
                   "moduleName": "./dist/RandomImages.js",
                   "type": "harmony import specifier",
                   "userRequest": "../web_modules/react.js",
-                  "loc": "37:5200-5205"
+                  "loc": "37:5201-5206"
                 },
                 {
                   "moduleId": null,
@@ -11823,7 +11823,7 @@
                   "moduleName": "./dist/RandomImages.js",
                   "type": "harmony import specifier",
                   "userRequest": "../web_modules/react.js",
-                  "loc": "37:5297-5302"
+                  "loc": "37:5298-5303"
                 }
               ],
               "usedExports": [
@@ -11949,7 +11949,7 @@
               "name": "./dist/RandomImages.js",
               "index": 80,
               "index2": 124,
-              "size": 6387,
+              "size": 6388,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -12002,7 +12002,7 @@
               ],
               "optimizationBailout": [],
               "depth": 2,
-              "source": "import\"core-js/modules/web.dom-collections.iterator.js\";let _=t=>t,_t,_t2,_t3,_t4;import React,{useState,useCallback,useMemo}from\"../web_modules/react.js\";import styled from\"../web_modules/styled-components.js\";import useImageLoadWorker2 from\"./hooks/useImageLoadWorker.js\";const Wrap=styled.div(_t||(_t=_`\n  padding: 1rem;\n`));const RadioGroup=styled.div(_t2||(_t2=_`\n  margin-top: 0.5rem;\n  span.label {\n    margin-right: 0.5rem;\n  }\n\n  label {\n    margin-right: 0.5rem;\n  }\n`));const ImageContainer=styled.div(_t3||(_t3=_`\n  display: flex;\n  flex-wrap: wrap;\n  margin-top: 1rem;\n  margin-left: auto;\n  margin-right: auto;\n`));const ImageWrap=styled.div(_t4||(_t4=_`\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  width: 45px;\n  height: 80px;\n  outline: 1px solid #00d694;\n  background-size: cover;\n  background-color: #eee;\n  font-size: 10px;\n  transition: 2s ease all;\n\n  &.isLoading {\n    background-color: #ccc;\n  }\n\n  &.isError {\n    background-color: red;\n  }\n`));var LoadingMethod;(function(LoadingMethod2){LoadingMethod2[\"ALL\"]=\"ALL\";LoadingMethod2[\"WORKER\"]=\"WORKER\";LoadingMethod2[\"DIRECT\"]=\"DIRECT\";})(LoadingMethod||(LoadingMethod={}));var UpdateStyle;(function(UpdateStyle2){UpdateStyle2[\"ALL\"]=\"ALL_TOGETHER\";UpdateStyle2[\"INCREMENTALLY\"]=\"INCREMENTALLY\";})(UpdateStyle||(UpdateStyle={}));export default function RandomImages(){const[imageTotalCount,setImageTotalCount]=useState(80);const[loadingMethod,setLoadingMethod]=useState(LoadingMethod.ALL);const[updateStyle,setUpdateStyle]=useState(UpdateStyle.ALL);const randomImages=useMemo(()=>new Array(imageTotalCount).fill(void 0).map(()=>`https://picsum.photos/seed/${Math.floor(Math.random()*1e4)}/720/1080`),[imageTotalCount]);const handleClickReloadImages=useCallback(()=>{const lastCount=imageTotalCount;setImageTotalCount(0);setTimeout(()=>{setImageTotalCount(lastCount);},300);},[imageTotalCount]);const handleChangeLoadingMethod=useCallback(e=>{setLoadingMethod(e.target.value);handleClickReloadImages();},[handleClickReloadImages]);const handleChangeUpdateStyle=useCallback(e=>{setUpdateStyle(e.target.value);handleClickReloadImages();},[handleClickReloadImages]);const{imageBlobs,maxWorkers}=useImageLoadWorker2({images:randomImages,incrementalUpdate:updateStyle===UpdateStyle.INCREMENTALLY});return/* @__PURE__ */React.createElement(Wrap,null,/* @__PURE__ */React.createElement(\"h1\",null,\"Web worker for image loading \"),/* @__PURE__ */React.createElement(\"p\",null,\"Create multiple(=number of logical processors by\",\" \",/* @__PURE__ */React.createElement(\"code\",null,\"navigator.hardwareConcurrency\"),\") web workers to load images simultaneously.\"),/* @__PURE__ */React.createElement(\"p\",null,\"DOM is going to be updated with fetched images as soon as worker's job is done.\"),/* @__PURE__ */React.createElement(\"div\",null,/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"\"},/* @__PURE__ */React.createElement(\"b\",null,\"Image total count \"),imageTotalCount),/* @__PURE__ */React.createElement(\"input\",{type:\"range\",name:\"range\",value:imageTotalCount,min:10,max:240,onChange:e=>{setImageTotalCount(parseInt(e.target.value,10));}}),/* @__PURE__ */React.createElement(\"button\",{onClick:handleClickReloadImages},\"Reload Images\"),/* @__PURE__ */React.createElement(RadioGroup,null,/* @__PURE__ */React.createElement(\"span\",{className:\"label\"},/* @__PURE__ */React.createElement(\"b\",null,\"Loading Method\")),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"loadingMethod\",id:\"loadingMethod_all\",value:LoadingMethod.ALL,checked:loadingMethod===LoadingMethod.ALL,onChange:handleChangeLoadingMethod}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"loadingMethod_all\"},\"All\"),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"loadingMethod\",id:\"loadingMethod_woker\",value:LoadingMethod.WORKER,checked:loadingMethod===LoadingMethod.WORKER,onChange:handleChangeLoadingMethod}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"loadingMethod_woker\"},\"Web Worker\"),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"loadingMethod\",id:\"loadingMethod_direct\",value:LoadingMethod.DIRECT,checked:loadingMethod===LoadingMethod.DIRECT,onChange:handleChangeLoadingMethod}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"loadingMethod_direct\"},\"Direct\")),/* @__PURE__ */React.createElement(RadioGroup,null,/* @__PURE__ */React.createElement(\"span\",{className:\"label\"},/* @__PURE__ */React.createElement(\"b\",null,\"Update Style\")),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"updateStyle\",id:\"updateStyle_all\",value:UpdateStyle.ALL,checked:updateStyle===UpdateStyle.ALL,onChange:handleChangeUpdateStyle}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"updateStyle_all\"},\"Update all together\"),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"updateStyle\",id:\"updateStyle_increment\",value:UpdateStyle.INCREMENTALLY,checked:updateStyle===UpdateStyle.INCREMENTALLY,onChange:handleChangeUpdateStyle}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"updateStyle_increment\"},\"Update incrementally\")),/* @__PURE__ */React.createElement(\"div\",null),/* @__PURE__ */React.createElement(RadioGroup,null,/* @__PURE__ */React.createElement(\"span\",{className:\"label\"},/* @__PURE__ */React.createElement(\"b\",null,\"Number of workers\")),/* @__PURE__ */React.createElement(\"span\",null,maxWorkers))),(loadingMethod===LoadingMethod.ALL||loadingMethod===LoadingMethod.WORKER)&&/* @__PURE__ */React.createElement(React.Fragment,null,/* @__PURE__ */React.createElement(\"h2\",null,\"Loading by web worker\"),/* @__PURE__ */React.createElement(ImageContainer,null,imageBlobs.map((imageBlob,index)=>{return/* @__PURE__ */React.createElement(ImageWrap,{key:index,style:imageBlob?{backgroundImage:`url(${imageBlob})`}:{},className:imageBlob===void 0?\"isLoading\":imageBlob===null?\"isError\":\"\"},imageBlob===void 0&&/* @__PURE__ */React.createElement(\"span\",null,\"loding\"),imageBlob===null&&/* @__PURE__ */React.createElement(\"span\",null,\"error\"));}))),(loadingMethod===LoadingMethod.ALL||loadingMethod===LoadingMethod.DIRECT)&&/* @__PURE__ */React.createElement(\"div\",null,/* @__PURE__ */React.createElement(\"h2\",null,\"Direct loading\"),/* @__PURE__ */React.createElement(ImageContainer,null,randomImages.map((imageUrl,index)=>{return/* @__PURE__ */React.createElement(ImageWrap,{key:index,style:{backgroundImage:`url(${imageUrl})`}});}))));}"
+              "source": "import\"core-js/modules/web.dom-collections.iterator.js\";let _=t=>t,_t,_t2,_t3,_t4;import React,{useState,useCallback,useMemo}from\"../web_modules/react.js\";import styled from\"../web_modules/styled-components.js\";import useImageLoadWorker2 from\"./hooks/useImageLoadWorker.js\";const Wrap=styled.div(_t||(_t=_`\n  padding: 1rem;\n`));const RadioGroup=styled.div(_t2||(_t2=_`\n  margin-top: 0.5rem;\n  span.label {\n    margin-right: 0.5rem;\n  }\n\n  label {\n    margin-right: 0.5rem;\n  }\n`));const ImageContainer=styled.div(_t3||(_t3=_`\n  display: flex;\n  flex-wrap: wrap;\n  margin-top: 1rem;\n  margin-left: auto;\n  margin-right: auto;\n`));const ImageWrap=styled.div(_t4||(_t4=_`\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  width: 45px;\n  height: 80px;\n  outline: 1px solid #00d694;\n  background-size: cover;\n  background-color: #eee;\n  font-size: 10px;\n  transition: 2s ease all;\n\n  &.isLoading {\n    background-color: #ccc;\n  }\n\n  &.isError {\n    background-color: red;\n  }\n`));var LoadingMethod;(function(LoadingMethod2){LoadingMethod2[\"ALL\"]=\"ALL\";LoadingMethod2[\"WORKER\"]=\"WORKER\";LoadingMethod2[\"DIRECT\"]=\"DIRECT\";})(LoadingMethod||(LoadingMethod={}));var UpdateStyle;(function(UpdateStyle2){UpdateStyle2[\"ALL\"]=\"ALL_TOGETHER\";UpdateStyle2[\"INCREMENTALLY\"]=\"INCREMENTALLY\";})(UpdateStyle||(UpdateStyle={}));export default function RandomImages(){const[imageTotalCount,setImageTotalCount]=useState(80);const[loadingMethod,setLoadingMethod]=useState(LoadingMethod.ALL);const[updateStyle,setUpdateStyle]=useState(UpdateStyle.ALL);const randomImages=useMemo(()=>new Array(imageTotalCount).fill(void 0).map(()=>`https://picsum.photos/seed/${Math.floor(Math.random()*1e4)}/720/1080`),[imageTotalCount]);const handleClickReloadImages=useCallback(()=>{const lastCount=imageTotalCount;setImageTotalCount(0);setTimeout(()=>{setImageTotalCount(lastCount);},300);},[imageTotalCount]);const handleChangeLoadingMethod=useCallback(e=>{setLoadingMethod(e.target.value);handleClickReloadImages();},[handleClickReloadImages]);const handleChangeUpdateStyle=useCallback(e=>{setUpdateStyle(e.target.value);handleClickReloadImages();},[handleClickReloadImages]);const{imageBlobs,maxWorkers}=useImageLoadWorker2({images:randomImages,incrementalUpdate:updateStyle===UpdateStyle.INCREMENTALLY});return/* @__PURE__ */React.createElement(Wrap,null,/* @__PURE__ */React.createElement(\"h1\",null,\"Web worker for image loading \"),/* @__PURE__ */React.createElement(\"p\",null,\"Create multiple(=number of logical processors by\",\" \",/* @__PURE__ */React.createElement(\"code\",null,\"navigator.hardwareConcurrency\"),\") web workers to load images simultaneously.\"),/* @__PURE__ */React.createElement(\"p\",null,\"DOM is going to be updated with fetched images as soon as worker's job is done.\"),/* @__PURE__ */React.createElement(\"div\",null,/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"\"},/* @__PURE__ */React.createElement(\"b\",null,\"Image total count \"),imageTotalCount),/* @__PURE__ */React.createElement(\"input\",{type:\"range\",name:\"range\",value:imageTotalCount,min:10,max:240,onChange:e=>{setImageTotalCount(parseInt(e.target.value,10));}}),/* @__PURE__ */React.createElement(\"button\",{onClick:handleClickReloadImages},\"Reload Images\"),/* @__PURE__ */React.createElement(RadioGroup,null,/* @__PURE__ */React.createElement(\"span\",{className:\"label\"},/* @__PURE__ */React.createElement(\"b\",null,\"Loading Method\")),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"loadingMethod\",id:\"loadingMethod_all\",value:LoadingMethod.ALL,checked:loadingMethod===LoadingMethod.ALL,onChange:handleChangeLoadingMethod}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"loadingMethod_all\"},\"All\"),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"loadingMethod\",id:\"loadingMethod_woker\",value:LoadingMethod.WORKER,checked:loadingMethod===LoadingMethod.WORKER,onChange:handleChangeLoadingMethod}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"loadingMethod_woker\"},\"Web Worker\"),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"loadingMethod\",id:\"loadingMethod_direct\",value:LoadingMethod.DIRECT,checked:loadingMethod===LoadingMethod.DIRECT,onChange:handleChangeLoadingMethod}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"loadingMethod_direct\"},\"Direct\")),/* @__PURE__ */React.createElement(RadioGroup,null,/* @__PURE__ */React.createElement(\"span\",{className:\"label\"},/* @__PURE__ */React.createElement(\"b\",null,\"Update Style\")),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"updateStyle\",id:\"updateStyle_all\",value:UpdateStyle.ALL,checked:updateStyle===UpdateStyle.ALL,onChange:handleChangeUpdateStyle}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"updateStyle_all\"},\"Update all together\"),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"updateStyle\",id:\"updateStyle_increment\",value:UpdateStyle.INCREMENTALLY,checked:updateStyle===UpdateStyle.INCREMENTALLY,onChange:handleChangeUpdateStyle}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"updateStyle_increment\"},\"Update incrementally\")),/* @__PURE__ */React.createElement(\"div\",null),/* @__PURE__ */React.createElement(RadioGroup,null,/* @__PURE__ */React.createElement(\"span\",{className:\"label\"},/* @__PURE__ */React.createElement(\"b\",null,\"Number of workers\")),/* @__PURE__ */React.createElement(\"span\",null,maxWorkers))),(loadingMethod===LoadingMethod.ALL||loadingMethod===LoadingMethod.WORKER)&&/* @__PURE__ */React.createElement(React.Fragment,null,/* @__PURE__ */React.createElement(\"h2\",null,\"Loading by web worker\"),/* @__PURE__ */React.createElement(ImageContainer,null,imageBlobs.map((imageBlob,index)=>{return/* @__PURE__ */React.createElement(ImageWrap,{key:index,style:imageBlob?{backgroundImage:`url(${imageBlob})`}:{},className:imageBlob===void 0?\"isLoading\":imageBlob===null?\"isError\":\"\"},imageBlob===void 0&&/* @__PURE__ */React.createElement(\"span\",null,\"loading\"),imageBlob===null&&/* @__PURE__ */React.createElement(\"span\",null,\"error\"));}))),(loadingMethod===LoadingMethod.ALL||loadingMethod===LoadingMethod.DIRECT)&&/* @__PURE__ */React.createElement(\"div\",null,/* @__PURE__ */React.createElement(\"h2\",null,\"Direct loading\"),/* @__PURE__ */React.createElement(ImageContainer,null,randomImages.map((imageUrl,index)=>{return/* @__PURE__ */React.createElement(ImageWrap,{key:index,style:{backgroundImage:`url(${imageUrl})`}});}))));}"
             },
             {
               "id": null,
@@ -17594,9 +17594,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-create.js",
-      "issuerId": 28,
-      "issuerName": "../node_modules/core-js/internals/object-create.js",
+      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-get-own-property-names.js",
+      "issuerId": 41,
+      "issuerName": "../node_modules/core-js/internals/object-get-own-property-names.js",
       "issuerPath": [
         {
           "id": null,
@@ -17629,9 +17629,9 @@
           "name": "../node_modules/core-js/internals/typed-array-constructor.js"
         },
         {
-          "id": 28,
-          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-create.js",
-          "name": "../node_modules/core-js/internals/object-create.js"
+          "id": 41,
+          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/object-get-own-property-names.js",
+          "name": "../node_modules/core-js/internals/object-get-own-property-names.js"
         }
       ],
       "failed": false,
@@ -19271,9 +19271,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer-view-core.js",
-      "issuerId": 45,
-      "issuerName": "../node_modules/core-js/internals/array-buffer-view-core.js",
+      "issuer": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer.js",
+      "issuerId": 99,
+      "issuerName": "../node_modules/core-js/internals/array-buffer.js",
       "issuerPath": [
         {
           "id": null,
@@ -19306,9 +19306,9 @@
           "name": "../node_modules/core-js/internals/typed-array-constructor.js"
         },
         {
-          "id": 45,
-          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer-view-core.js",
-          "name": "../node_modules/core-js/internals/array-buffer-view-core.js"
+          "id": 99,
+          "identifier": "/Users/edwin/repository/rhostem/image-load-worker/node_modules/core-js/internals/array-buffer.js",
+          "name": "../node_modules/core-js/internals/array-buffer.js"
         }
       ],
       "failed": false,
@@ -23288,7 +23288,7 @@
       "name": "./dist/index.js + 7 modules",
       "index": 0,
       "index2": 128,
-      "size": 54304,
+      "size": 54305,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -24073,7 +24073,7 @@
               "moduleName": "./dist/RandomImages.js",
               "type": "harmony import specifier",
               "userRequest": "../web_modules/react.js",
-              "loc": "37:4954-4959"
+              "loc": "37:4955-4960"
             },
             {
               "moduleId": null,
@@ -24082,7 +24082,7 @@
               "moduleName": "./dist/RandomImages.js",
               "type": "harmony import specifier",
               "userRequest": "../web_modules/react.js",
-              "loc": "37:5091-5096"
+              "loc": "37:5092-5097"
             },
             {
               "moduleId": null,
@@ -24091,7 +24091,7 @@
               "moduleName": "./dist/RandomImages.js",
               "type": "harmony import specifier",
               "userRequest": "../web_modules/react.js",
-              "loc": "37:5137-5142"
+              "loc": "37:5138-5143"
             },
             {
               "moduleId": null,
@@ -24100,7 +24100,7 @@
               "moduleName": "./dist/RandomImages.js",
               "type": "harmony import specifier",
               "userRequest": "../web_modules/react.js",
-              "loc": "37:5200-5205"
+              "loc": "37:5201-5206"
             },
             {
               "moduleId": null,
@@ -24109,7 +24109,7 @@
               "moduleName": "./dist/RandomImages.js",
               "type": "harmony import specifier",
               "userRequest": "../web_modules/react.js",
-              "loc": "37:5297-5302"
+              "loc": "37:5298-5303"
             }
           ],
           "usedExports": [
@@ -24235,7 +24235,7 @@
           "name": "./dist/RandomImages.js",
           "index": 80,
           "index2": 124,
-          "size": 6387,
+          "size": 6388,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -24288,7 +24288,7 @@
           ],
           "optimizationBailout": [],
           "depth": 2,
-          "source": "import\"core-js/modules/web.dom-collections.iterator.js\";let _=t=>t,_t,_t2,_t3,_t4;import React,{useState,useCallback,useMemo}from\"../web_modules/react.js\";import styled from\"../web_modules/styled-components.js\";import useImageLoadWorker2 from\"./hooks/useImageLoadWorker.js\";const Wrap=styled.div(_t||(_t=_`\n  padding: 1rem;\n`));const RadioGroup=styled.div(_t2||(_t2=_`\n  margin-top: 0.5rem;\n  span.label {\n    margin-right: 0.5rem;\n  }\n\n  label {\n    margin-right: 0.5rem;\n  }\n`));const ImageContainer=styled.div(_t3||(_t3=_`\n  display: flex;\n  flex-wrap: wrap;\n  margin-top: 1rem;\n  margin-left: auto;\n  margin-right: auto;\n`));const ImageWrap=styled.div(_t4||(_t4=_`\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  width: 45px;\n  height: 80px;\n  outline: 1px solid #00d694;\n  background-size: cover;\n  background-color: #eee;\n  font-size: 10px;\n  transition: 2s ease all;\n\n  &.isLoading {\n    background-color: #ccc;\n  }\n\n  &.isError {\n    background-color: red;\n  }\n`));var LoadingMethod;(function(LoadingMethod2){LoadingMethod2[\"ALL\"]=\"ALL\";LoadingMethod2[\"WORKER\"]=\"WORKER\";LoadingMethod2[\"DIRECT\"]=\"DIRECT\";})(LoadingMethod||(LoadingMethod={}));var UpdateStyle;(function(UpdateStyle2){UpdateStyle2[\"ALL\"]=\"ALL_TOGETHER\";UpdateStyle2[\"INCREMENTALLY\"]=\"INCREMENTALLY\";})(UpdateStyle||(UpdateStyle={}));export default function RandomImages(){const[imageTotalCount,setImageTotalCount]=useState(80);const[loadingMethod,setLoadingMethod]=useState(LoadingMethod.ALL);const[updateStyle,setUpdateStyle]=useState(UpdateStyle.ALL);const randomImages=useMemo(()=>new Array(imageTotalCount).fill(void 0).map(()=>`https://picsum.photos/seed/${Math.floor(Math.random()*1e4)}/720/1080`),[imageTotalCount]);const handleClickReloadImages=useCallback(()=>{const lastCount=imageTotalCount;setImageTotalCount(0);setTimeout(()=>{setImageTotalCount(lastCount);},300);},[imageTotalCount]);const handleChangeLoadingMethod=useCallback(e=>{setLoadingMethod(e.target.value);handleClickReloadImages();},[handleClickReloadImages]);const handleChangeUpdateStyle=useCallback(e=>{setUpdateStyle(e.target.value);handleClickReloadImages();},[handleClickReloadImages]);const{imageBlobs,maxWorkers}=useImageLoadWorker2({images:randomImages,incrementalUpdate:updateStyle===UpdateStyle.INCREMENTALLY});return/* @__PURE__ */React.createElement(Wrap,null,/* @__PURE__ */React.createElement(\"h1\",null,\"Web worker for image loading \"),/* @__PURE__ */React.createElement(\"p\",null,\"Create multiple(=number of logical processors by\",\" \",/* @__PURE__ */React.createElement(\"code\",null,\"navigator.hardwareConcurrency\"),\") web workers to load images simultaneously.\"),/* @__PURE__ */React.createElement(\"p\",null,\"DOM is going to be updated with fetched images as soon as worker's job is done.\"),/* @__PURE__ */React.createElement(\"div\",null,/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"\"},/* @__PURE__ */React.createElement(\"b\",null,\"Image total count \"),imageTotalCount),/* @__PURE__ */React.createElement(\"input\",{type:\"range\",name:\"range\",value:imageTotalCount,min:10,max:240,onChange:e=>{setImageTotalCount(parseInt(e.target.value,10));}}),/* @__PURE__ */React.createElement(\"button\",{onClick:handleClickReloadImages},\"Reload Images\"),/* @__PURE__ */React.createElement(RadioGroup,null,/* @__PURE__ */React.createElement(\"span\",{className:\"label\"},/* @__PURE__ */React.createElement(\"b\",null,\"Loading Method\")),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"loadingMethod\",id:\"loadingMethod_all\",value:LoadingMethod.ALL,checked:loadingMethod===LoadingMethod.ALL,onChange:handleChangeLoadingMethod}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"loadingMethod_all\"},\"All\"),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"loadingMethod\",id:\"loadingMethod_woker\",value:LoadingMethod.WORKER,checked:loadingMethod===LoadingMethod.WORKER,onChange:handleChangeLoadingMethod}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"loadingMethod_woker\"},\"Web Worker\"),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"loadingMethod\",id:\"loadingMethod_direct\",value:LoadingMethod.DIRECT,checked:loadingMethod===LoadingMethod.DIRECT,onChange:handleChangeLoadingMethod}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"loadingMethod_direct\"},\"Direct\")),/* @__PURE__ */React.createElement(RadioGroup,null,/* @__PURE__ */React.createElement(\"span\",{className:\"label\"},/* @__PURE__ */React.createElement(\"b\",null,\"Update Style\")),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"updateStyle\",id:\"updateStyle_all\",value:UpdateStyle.ALL,checked:updateStyle===UpdateStyle.ALL,onChange:handleChangeUpdateStyle}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"updateStyle_all\"},\"Update all together\"),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"updateStyle\",id:\"updateStyle_increment\",value:UpdateStyle.INCREMENTALLY,checked:updateStyle===UpdateStyle.INCREMENTALLY,onChange:handleChangeUpdateStyle}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"updateStyle_increment\"},\"Update incrementally\")),/* @__PURE__ */React.createElement(\"div\",null),/* @__PURE__ */React.createElement(RadioGroup,null,/* @__PURE__ */React.createElement(\"span\",{className:\"label\"},/* @__PURE__ */React.createElement(\"b\",null,\"Number of workers\")),/* @__PURE__ */React.createElement(\"span\",null,maxWorkers))),(loadingMethod===LoadingMethod.ALL||loadingMethod===LoadingMethod.WORKER)&&/* @__PURE__ */React.createElement(React.Fragment,null,/* @__PURE__ */React.createElement(\"h2\",null,\"Loading by web worker\"),/* @__PURE__ */React.createElement(ImageContainer,null,imageBlobs.map((imageBlob,index)=>{return/* @__PURE__ */React.createElement(ImageWrap,{key:index,style:imageBlob?{backgroundImage:`url(${imageBlob})`}:{},className:imageBlob===void 0?\"isLoading\":imageBlob===null?\"isError\":\"\"},imageBlob===void 0&&/* @__PURE__ */React.createElement(\"span\",null,\"loding\"),imageBlob===null&&/* @__PURE__ */React.createElement(\"span\",null,\"error\"));}))),(loadingMethod===LoadingMethod.ALL||loadingMethod===LoadingMethod.DIRECT)&&/* @__PURE__ */React.createElement(\"div\",null,/* @__PURE__ */React.createElement(\"h2\",null,\"Direct loading\"),/* @__PURE__ */React.createElement(ImageContainer,null,randomImages.map((imageUrl,index)=>{return/* @__PURE__ */React.createElement(ImageWrap,{key:index,style:{backgroundImage:`url(${imageUrl})`}});}))));}"
+          "source": "import\"core-js/modules/web.dom-collections.iterator.js\";let _=t=>t,_t,_t2,_t3,_t4;import React,{useState,useCallback,useMemo}from\"../web_modules/react.js\";import styled from\"../web_modules/styled-components.js\";import useImageLoadWorker2 from\"./hooks/useImageLoadWorker.js\";const Wrap=styled.div(_t||(_t=_`\n  padding: 1rem;\n`));const RadioGroup=styled.div(_t2||(_t2=_`\n  margin-top: 0.5rem;\n  span.label {\n    margin-right: 0.5rem;\n  }\n\n  label {\n    margin-right: 0.5rem;\n  }\n`));const ImageContainer=styled.div(_t3||(_t3=_`\n  display: flex;\n  flex-wrap: wrap;\n  margin-top: 1rem;\n  margin-left: auto;\n  margin-right: auto;\n`));const ImageWrap=styled.div(_t4||(_t4=_`\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  width: 45px;\n  height: 80px;\n  outline: 1px solid #00d694;\n  background-size: cover;\n  background-color: #eee;\n  font-size: 10px;\n  transition: 2s ease all;\n\n  &.isLoading {\n    background-color: #ccc;\n  }\n\n  &.isError {\n    background-color: red;\n  }\n`));var LoadingMethod;(function(LoadingMethod2){LoadingMethod2[\"ALL\"]=\"ALL\";LoadingMethod2[\"WORKER\"]=\"WORKER\";LoadingMethod2[\"DIRECT\"]=\"DIRECT\";})(LoadingMethod||(LoadingMethod={}));var UpdateStyle;(function(UpdateStyle2){UpdateStyle2[\"ALL\"]=\"ALL_TOGETHER\";UpdateStyle2[\"INCREMENTALLY\"]=\"INCREMENTALLY\";})(UpdateStyle||(UpdateStyle={}));export default function RandomImages(){const[imageTotalCount,setImageTotalCount]=useState(80);const[loadingMethod,setLoadingMethod]=useState(LoadingMethod.ALL);const[updateStyle,setUpdateStyle]=useState(UpdateStyle.ALL);const randomImages=useMemo(()=>new Array(imageTotalCount).fill(void 0).map(()=>`https://picsum.photos/seed/${Math.floor(Math.random()*1e4)}/720/1080`),[imageTotalCount]);const handleClickReloadImages=useCallback(()=>{const lastCount=imageTotalCount;setImageTotalCount(0);setTimeout(()=>{setImageTotalCount(lastCount);},300);},[imageTotalCount]);const handleChangeLoadingMethod=useCallback(e=>{setLoadingMethod(e.target.value);handleClickReloadImages();},[handleClickReloadImages]);const handleChangeUpdateStyle=useCallback(e=>{setUpdateStyle(e.target.value);handleClickReloadImages();},[handleClickReloadImages]);const{imageBlobs,maxWorkers}=useImageLoadWorker2({images:randomImages,incrementalUpdate:updateStyle===UpdateStyle.INCREMENTALLY});return/* @__PURE__ */React.createElement(Wrap,null,/* @__PURE__ */React.createElement(\"h1\",null,\"Web worker for image loading \"),/* @__PURE__ */React.createElement(\"p\",null,\"Create multiple(=number of logical processors by\",\" \",/* @__PURE__ */React.createElement(\"code\",null,\"navigator.hardwareConcurrency\"),\") web workers to load images simultaneously.\"),/* @__PURE__ */React.createElement(\"p\",null,\"DOM is going to be updated with fetched images as soon as worker's job is done.\"),/* @__PURE__ */React.createElement(\"div\",null,/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"\"},/* @__PURE__ */React.createElement(\"b\",null,\"Image total count \"),imageTotalCount),/* @__PURE__ */React.createElement(\"input\",{type:\"range\",name:\"range\",value:imageTotalCount,min:10,max:240,onChange:e=>{setImageTotalCount(parseInt(e.target.value,10));}}),/* @__PURE__ */React.createElement(\"button\",{onClick:handleClickReloadImages},\"Reload Images\"),/* @__PURE__ */React.createElement(RadioGroup,null,/* @__PURE__ */React.createElement(\"span\",{className:\"label\"},/* @__PURE__ */React.createElement(\"b\",null,\"Loading Method\")),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"loadingMethod\",id:\"loadingMethod_all\",value:LoadingMethod.ALL,checked:loadingMethod===LoadingMethod.ALL,onChange:handleChangeLoadingMethod}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"loadingMethod_all\"},\"All\"),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"loadingMethod\",id:\"loadingMethod_woker\",value:LoadingMethod.WORKER,checked:loadingMethod===LoadingMethod.WORKER,onChange:handleChangeLoadingMethod}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"loadingMethod_woker\"},\"Web Worker\"),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"loadingMethod\",id:\"loadingMethod_direct\",value:LoadingMethod.DIRECT,checked:loadingMethod===LoadingMethod.DIRECT,onChange:handleChangeLoadingMethod}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"loadingMethod_direct\"},\"Direct\")),/* @__PURE__ */React.createElement(RadioGroup,null,/* @__PURE__ */React.createElement(\"span\",{className:\"label\"},/* @__PURE__ */React.createElement(\"b\",null,\"Update Style\")),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"updateStyle\",id:\"updateStyle_all\",value:UpdateStyle.ALL,checked:updateStyle===UpdateStyle.ALL,onChange:handleChangeUpdateStyle}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"updateStyle_all\"},\"Update all together\"),/* @__PURE__ */React.createElement(\"input\",{type:\"radio\",name:\"updateStyle\",id:\"updateStyle_increment\",value:UpdateStyle.INCREMENTALLY,checked:updateStyle===UpdateStyle.INCREMENTALLY,onChange:handleChangeUpdateStyle}),/* @__PURE__ */React.createElement(\"label\",{htmlFor:\"updateStyle_increment\"},\"Update incrementally\")),/* @__PURE__ */React.createElement(\"div\",null),/* @__PURE__ */React.createElement(RadioGroup,null,/* @__PURE__ */React.createElement(\"span\",{className:\"label\"},/* @__PURE__ */React.createElement(\"b\",null,\"Number of workers\")),/* @__PURE__ */React.createElement(\"span\",null,maxWorkers))),(loadingMethod===LoadingMethod.ALL||loadingMethod===LoadingMethod.WORKER)&&/* @__PURE__ */React.createElement(React.Fragment,null,/* @__PURE__ */React.createElement(\"h2\",null,\"Loading by web worker\"),/* @__PURE__ */React.createElement(ImageContainer,null,imageBlobs.map((imageBlob,index)=>{return/* @__PURE__ */React.createElement(ImageWrap,{key:index,style:imageBlob?{backgroundImage:`url(${imageBlob})`}:{},className:imageBlob===void 0?\"isLoading\":imageBlob===null?\"isError\":\"\"},imageBlob===void 0&&/* @__PURE__ */React.createElement(\"span\",null,\"loading\"),imageBlob===null&&/* @__PURE__ */React.createElement(\"span\",null,\"error\"));}))),(loadingMethod===LoadingMethod.ALL||loadingMethod===LoadingMethod.DIRECT)&&/* @__PURE__ */React.createElement(\"div\",null,/* @__PURE__ */React.createElement(\"h2\",null,\"Direct loading\"),/* @__PURE__ */React.createElement(ImageContainer,null,randomImages.map((imageUrl,index)=>{return/* @__PURE__ */React.createElement(ImageWrap,{key:index,style:{backgroundImage:`url(${imageUrl})`}});}))));}"
         },
         {
           "id": null,

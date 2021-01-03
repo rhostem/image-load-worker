@@ -147,7 +147,7 @@ export default function RandomImages() {
         backgroundImage: `url(${imageBlob})`
       } : {},
       className: imageBlob === void 0 ? "isLoading" : imageBlob === null ? "isError" : ""
-    }, imageBlob === void 0 && /* @__PURE__ */ React.createElement("span", null, "loding"), imageBlob === null && /* @__PURE__ */ React.createElement("span", null, "error"));
+    }, imageBlob === void 0 && /* @__PURE__ */ React.createElement("span", null, "loading"), imageBlob === null && /* @__PURE__ */ React.createElement("span", null, "error"));
   }))), (loadingMethod === LoadingMethod.ALL || loadingMethod === LoadingMethod.DIRECT) && /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("h2", null, "Direct loading"), /* @__PURE__ */ React.createElement(ImageContainer, null, randomImages.map((imageUrl, index) => {
     return /* @__PURE__ */ React.createElement(ImageWrap, {
       key: index,
