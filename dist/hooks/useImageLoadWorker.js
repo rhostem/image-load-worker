@@ -18,8 +18,19 @@ export default function useImageLoadWorker({
       workers.forEach((worker) => worker.terminate());
     };
   }, [maxWorkers, workers]);
+  const revokeObjectUrls = useCallback((objectUrls) => {
+    if (objectUrls.length > 0) {
+      objectUrls.forEach((url) => {
+        if (url) {
+          console.log(`url`, url);
+          URL.revokeObjectURL(url);
+        }
+      });
+    }
+  }, []);
   const loadAllImagesAtOnce = useCallback(async (imageUrls) => {
     if (window.Worker) {
+      revokeObjectUrls(imageBlobs);
       setImageBlobs(new Array(imageUrls.length).fill(void 0));
       const imageChunks = [];
       for (let i = 0; i < maxWorkers; i++) {
@@ -90,15 +101,6 @@ export default function useImageLoadWorker({
       }
     };
   }, [workers]);
-  useEffect(() => () => {
-    if (imageBlobs.length > 0) {
-      imageBlobs.forEach((blob) => {
-        if (blob) {
-          URL.revokeObjectURL(blob);
-        }
-      });
-    }
-  });
   return {
     imageBlobs,
     maxWorkers
