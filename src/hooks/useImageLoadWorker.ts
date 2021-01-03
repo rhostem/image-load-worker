@@ -37,8 +37,6 @@ export default function useImageLoadWorker({
     if (objectUrls.length > 0) {
       objectUrls.forEach((url) => {
         if (url) {
-          console.log(`url`, url);
-
           URL.revokeObjectURL(url);
         }
       });
